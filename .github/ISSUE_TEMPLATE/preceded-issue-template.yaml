@@ -22,7 +22,7 @@ body:
       value: |
         ## 참고 사이트
         - https://developer.apple.com
-        - 
+        
     validations:
       required: false
 
