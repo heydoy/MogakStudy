@@ -48,13 +48,13 @@ body:
     id: expected-period
     attributes:
       label: 예상 소요 기간
-      placeholder: ~ MM/dd(E) ex. ~ 07/12(화)
+      placeholder: ~ MM/dd(E)
     validations:
       required: true
   - type: input
     id: real-period
     attributes:
       label: 실제 소요 기간
-      placeholder: ~ MM/dd(E) ex. ~ 07/12(화)
+      placeholder: ~ MM/dd(E) 
     validations:
       required: false
