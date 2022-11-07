@@ -2,6 +2,7 @@ name: Preceded Template
 description: 작업 시 선행되는 공부, 준비사항을 작성할 때 사용하는 템플릿
 title: "[Preceded] Title"
 labels: ["Preceded"]
+assignee: heydoy
 
 body:
   - type: input
