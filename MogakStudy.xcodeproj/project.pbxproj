@@ -16,6 +16,8 @@
 		A254D4652918DE9F00AC5006 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A254D4642918DE9F00AC5006 /* .gitignore */; };
 		A254D46E29196BE800AC5006 /* setColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46D29196BE800AC5006 /* setColor.swift */; };
 		A254D4702919749500AC5006 /* setFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46F2919749500AC5006 /* setFont.swift */; };
+		A254D4742919790400AC5006 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */; };
+		A254D4752919790400AC5006 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A254D4732919790400AC5006 /* NotoSansCJKkr-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A254D4642918DE9F00AC5006 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A254D46D29196BE800AC5006 /* setColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setColor.swift; sourceTree = "<group>"; };
 		A254D46F2919749500AC5006 /* setFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setFont.swift; sourceTree = "<group>"; };
+		A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		A254D4732919790400AC5006 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		A254D46A291934E400AC5006 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A254D4712919785700AC5006 /* Fonts */,
 				A254D4592918DE1500AC5006 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -122,6 +127,15 @@
 				A254D46F2919749500AC5006 /* setFont.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A254D4712919785700AC5006 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A254D4732919790400AC5006 /* NotoSansCJKkr-Medium.otf */,
+				A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A254D4742919790400AC5006 /* NotoSansCJKkr-Regular.otf in Resources */,
 				A254D4652918DE9F00AC5006 /* .gitignore in Resources */,
 				A254D45D2918DE1500AC5006 /* LaunchScreen.storyboard in Resources */,
 				A254D45A2918DE1500AC5006 /* Assets.xcassets in Resources */,
 				A254D4582918DE1300AC5006 /* Main.storyboard in Resources */,
+				A254D4752919790400AC5006 /* NotoSansCJKkr-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
