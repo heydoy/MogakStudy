@@ -1,0 +1,36 @@
+name: Preceded Template
+description: 작업 시 선행되는 공부, 준비사항을 작성할 때 사용하는 템플릿
+title: "[Preceded] Title"
+labels: ["Preceded"]
+
+body:
+  - type: input
+    id: prepare-topic
+    attributes:
+      label: Topic
+      description: 무엇을 준비하고 공부했는지 
+      placeholder: ex. SMS Auth 확인하는 기능
+    validations:
+      required: true
+      
+  - type: textarea
+    id: prepare-reference
+    attributes:
+      label: Reference
+      description: 참고한 내용들
+      placeholder: ex. 애플 공식문서 
+      value: |
+        ## 참고 사이트
+        - https://developer.apple.com
+        - 
+    validations:
+      required: false
+
+  - type: input
+    id: prepare-period
+    attributes:
+      label: Period
+      description: 예상 소요 기간
+      placeholder: ~ MM/DD(E) ex. ~ 07/12(화)
+    validations:
+      required: true
