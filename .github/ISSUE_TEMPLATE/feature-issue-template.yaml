@@ -1,32 +1,32 @@
-name: Feature Tamplate
-description: 기능 추가할 때 쓰는 템플릿
+name: Feature Template
+description: 기능 추가 시에 쓰는 템플릿
 title: "[Feature] Title"
-labels: ["feature"]
+labels: ["Feature"]
 
 body:
   - type: textarea
     id: feature-contents
     attributes:
       label: feature 설명
-      description: feature 설명
-      placeholder: e.g. 
+      description: feature 설명에 대해 자세히 적기
+      placeholder: e.g. 녹음 기능 만들기
     validations:
       required: true
   - type: input
-    id: prepare-issue
+    id: preceded-issue
     attributes:
-      label: Prepare Issue(Optional)
-      description: 관련된 Prepare가 있다면 적어주세요.
-      placeholder: "ex. #14"
+      label: Preceded issue(Optional)
+      description: 선행되어야 하는 내용이 있을 경우 적기
+      placeholder: "ex. #101"
     validations:
       required: false
   - type: textarea
     id: related-view
     attributes:
       label: Related View(Optional)
-      description: 작업하는 사항에 영향을 받는 View(화면)
+      description: 작업내용에 영향받는 뷰
       value: |
-        - ex. HomeView
+        - e.g. SignupView
     validations:
       required: false
       
