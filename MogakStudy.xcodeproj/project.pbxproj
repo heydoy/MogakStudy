@@ -15,6 +15,7 @@
 		A254D45D2918DE1500AC5006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A254D45B2918DE1500AC5006 /* LaunchScreen.storyboard */; };
 		A254D4652918DE9F00AC5006 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A254D4642918DE9F00AC5006 /* .gitignore */; };
 		A254D46E29196BE800AC5006 /* setColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46D29196BE800AC5006 /* setColor.swift */; };
+		A254D4702919749500AC5006 /* setFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46F2919749500AC5006 /* setFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A254D45E2918DE1500AC5006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A254D4642918DE9F00AC5006 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A254D46D29196BE800AC5006 /* setColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setColor.swift; sourceTree = "<group>"; };
+		A254D46F2919749500AC5006 /* setFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				A254D46D29196BE800AC5006 /* setColor.swift */,
+				A254D46F2919749500AC5006 /* setFont.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A254D4552918DE1300AC5006 /* ViewController.swift in Sources */,
+				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 			);
