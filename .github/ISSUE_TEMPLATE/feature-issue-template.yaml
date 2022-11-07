@@ -36,11 +36,11 @@ body:
       label: 우선 순위
       description: Backlog에서의 중요도
       options:
-        - ⭐️⭐️⭐️⭐️⭐️
-        - ⭐️⭐️⭐️⭐️
-        - ⭐️⭐️⭐️
-        - ⭐️⭐️
         - ⭐️
+        - ⭐️⭐️
+        - ⭐️⭐️⭐️
+        - ⭐️⭐️⭐️⭐️
+        - ⭐️⭐️⭐️⭐️⭐️
     validations:
       required: true
       
