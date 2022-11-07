@@ -14,6 +14,7 @@
 		A254D45A2918DE1500AC5006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A254D4592918DE1500AC5006 /* Assets.xcassets */; };
 		A254D45D2918DE1500AC5006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A254D45B2918DE1500AC5006 /* LaunchScreen.storyboard */; };
 		A254D4652918DE9F00AC5006 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A254D4642918DE9F00AC5006 /* .gitignore */; };
+		A254D46E29196BE800AC5006 /* setColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46D29196BE800AC5006 /* setColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A254D45C2918DE1500AC5006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A254D45E2918DE1500AC5006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A254D4642918DE9F00AC5006 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A254D46D29196BE800AC5006 /* setColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A254D4662919345400AC5006 /* App */,
 				A254D468291934BB00AC5006 /* Global */,
 				A254D4672919348D00AC5006 /* Presentation */,
+				A254D46C29196B9100AC5006 /* Util */,
 				A254D45E2918DE1500AC5006 /* Info.plist */,
 			);
 			path = MogakStudy;
@@ -108,6 +111,14 @@
 				A254D4592918DE1500AC5006 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A254D46C29196B9100AC5006 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A254D46D29196BE800AC5006 /* setColor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A254D4552918DE1300AC5006 /* ViewController.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
