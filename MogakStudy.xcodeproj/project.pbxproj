@@ -18,6 +18,7 @@
 		A254D4702919749500AC5006 /* setFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D46F2919749500AC5006 /* setFont.swift */; };
 		A254D4742919790400AC5006 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */; };
 		A254D4752919790400AC5006 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A254D4732919790400AC5006 /* NotoSansCJKkr-Medium.otf */; };
+		A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4772919D1BD00AC5006 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A254D46F2919749500AC5006 /* setFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setFont.swift; sourceTree = "<group>"; };
 		A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		A254D4732919790400AC5006 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		A254D4772919D1BD00AC5006 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		A254D468291934BB00AC5006 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				A254D4762919D1AC00AC5006 /* Extension */,
 				A254D46A291934E400AC5006 /* Resource */,
 				A254D469291934C800AC5006 /* Support */,
 			);
@@ -136,6 +139,14 @@
 				A254D4722919790400AC5006 /* NotoSansCJKkr-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A254D4762919D1AC00AC5006 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A254D4772919D1BD00AC5006 /* String+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				A254D4552918DE1300AC5006 /* ViewController.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
+				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
