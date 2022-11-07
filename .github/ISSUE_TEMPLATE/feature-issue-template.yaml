@@ -7,8 +7,8 @@ body:
   - type: textarea
     id: feature-contents
     attributes:
-      label: feature 설명
-      description: feature 설명에 대해 자세히 적기
+      label: Feature 설명
+      description: Feature에 대해 자세히 적기
       placeholder: e.g. 녹음 기능 만들기
     validations:
       required: true
