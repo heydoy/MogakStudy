@@ -2,6 +2,7 @@ name: Feature Template
 description: 기능 추가 시에 쓰는 템플릿
 title: "[Feature] Title"
 labels: ["Feature"]
+assignees: heydoy
 
 body:
   - type: textarea
