@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
+		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
+		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
+		A23E7A93291A3BF3005B746F /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A92291A3BF3005B746F /* Toast */; };
+		A23E7A96291A3C95005B746F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A95291A3C95005B746F /* FirebaseAuth */; };
+		A23E7A99291A5B43005B746F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A98291A5B43005B746F /* Alamofire */; };
+		A23E7A9C291A5BAF005B746F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A9B291A5BAF005B746F /* RxCocoa */; };
+		A23E7A9E291A5BAF005B746F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A9D291A5BAF005B746F /* RxSwift */; };
+		A23E7AA1291A5C1B005B746F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA0291A5C1B005B746F /* Reachability */; };
+		A23E7AA4291A5CA2005B746F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA3291A5CA2005B746F /* Hero */; };
 		A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4502918DE1300AC5006 /* AppDelegate.swift */; };
 		A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4522918DE1300AC5006 /* SceneDelegate.swift */; };
 		A254D4552918DE1300AC5006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4542918DE1300AC5006 /* ViewController.swift */; };
@@ -55,6 +64,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23E7A9C291A5BAF005B746F /* RxCocoa in Frameworks */,
+				A23E7A99291A5B43005B746F /* Alamofire in Frameworks */,
+				A23E7A93291A3BF3005B746F /* Toast in Frameworks */,
+				A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */,
+				A23E7A90291A3BD6005B746F /* Then in Frameworks */,
+				A23E7AA1291A5C1B005B746F /* Reachability in Frameworks */,
+				A23E7A96291A3C95005B746F /* FirebaseAuth in Frameworks */,
+				A23E7AA4291A5CA2005B746F /* Hero in Frameworks */,
+				A23E7A9E291A5BAF005B746F /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +207,17 @@
 			dependencies = (
 			);
 			name = MogakStudy;
+			packageProductDependencies = (
+				A23E7A8C291A3BC6005B746F /* SnapKit */,
+				A23E7A8F291A3BD6005B746F /* Then */,
+				A23E7A92291A3BF3005B746F /* Toast */,
+				A23E7A95291A3C95005B746F /* FirebaseAuth */,
+				A23E7A98291A5B43005B746F /* Alamofire */,
+				A23E7A9B291A5BAF005B746F /* RxCocoa */,
+				A23E7A9D291A5BAF005B746F /* RxSwift */,
+				A23E7AA0291A5C1B005B746F /* Reachability */,
+				A23E7AA3291A5CA2005B746F /* Hero */,
+			);
 			productName = MogakStudy;
 			productReference = A254D44D2918DE1300AC5006 /* MogakStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +247,16 @@
 				ko,
 			);
 			mainGroup = A254D4442918DE1300AC5006;
+			packageReferences = (
+				A23E7A8B291A3BC6005B746F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A23E7A8E291A3BD6005B746F /* XCRemoteSwiftPackageReference "Then" */,
+				A23E7A91291A3BF3005B746F /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				A23E7A94291A3C95005B746F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A23E7A97291A5B43005B746F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A23E7A9A291A5BAF005B746F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A23E7A9F291A5C1B005B746F /* XCRemoteSwiftPackageReference "Reachability" */,
+				A23E7AA2291A5CA1005B746F /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = A254D44E2918DE1300AC5006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -501,6 +540,121 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A23E7A8B291A3BC6005B746F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A23E7A8E291A3BD6005B746F /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		A23E7A91291A3BF3005B746F /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A23E7A94291A3C95005B746F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		A23E7A97291A5B43005B746F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A23E7A9A291A5BAF005B746F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		A23E7A9F291A5C1B005B746F /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.0;
+			};
+		};
+		A23E7AA2291A5CA1005B746F /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A23E7A8C291A3BC6005B746F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A8B291A3BC6005B746F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A23E7A8F291A3BD6005B746F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A8E291A3BD6005B746F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		A23E7A92291A3BF3005B746F /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A91291A3BF3005B746F /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		A23E7A95291A3C95005B746F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A94291A3C95005B746F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A23E7A98291A5B43005B746F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A97291A5B43005B746F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A23E7A9B291A5BAF005B746F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A9A291A5BAF005B746F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A23E7A9D291A5BAF005B746F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A9A291A5BAF005B746F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A23E7AA0291A5C1B005B746F /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7A9F291A5C1B005B746F /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		A23E7AA3291A5CA2005B746F /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23E7AA2291A5CA1005B746F /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A254D4452918DE1300AC5006 /* Project object */;
 }
