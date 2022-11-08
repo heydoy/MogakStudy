@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  MogakStudy
+
+  Created by Doy Kim on 2022/11/08.
+  
+*/
+
+// 앱 이름
+"CFBundleDisplayName" = "새싹스터디";
