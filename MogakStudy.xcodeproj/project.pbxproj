@@ -17,6 +17,7 @@
 		A23E7AA1291A5C1B005B746F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA0291A5C1B005B746F /* Reachability */; };
 		A23E7AA4291A5CA2005B746F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA3291A5CA2005B746F /* Hero */; };
 		A23E7AAD291A7BD0005B746F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AAC291A7BD0005B746F /* FirebaseAuth */; };
+		A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2499A9C291DD48900A81D07 /* FBAuthManager.swift */; };
 		A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4502918DE1300AC5006 /* AppDelegate.swift */; };
 		A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4522918DE1300AC5006 /* SceneDelegate.swift */; };
 		A254D4552918DE1300AC5006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4542918DE1300AC5006 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
+		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
 		A254D44D2918DE1300AC5006 /* MogakStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MogakStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A254D4502918DE1300AC5006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A254D4522918DE1300AC5006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2499A9A291DD46200A81D07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2499A9B291DD47500A81D07 /* Auth */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A2499A9B291DD47500A81D07 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A2499A9C291DD48900A81D07 /* FBAuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		A254D4442918DE1300AC5006 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +120,7 @@
 			children = (
 				A23E7AA5291A669D005B746F /* MogakStudy.entitlements */,
 				A254D4662919345400AC5006 /* App */,
+				A2499A9A291DD46200A81D07 /* Data */,
 				A254D468291934BB00AC5006 /* Global */,
 				A254D4672919348D00AC5006 /* Presentation */,
 				A254D46C29196B9100AC5006 /* Util */,
@@ -295,6 +314,7 @@
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A254D4552918DE1300AC5006 /* ViewController.swift in Sources */,
+				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
