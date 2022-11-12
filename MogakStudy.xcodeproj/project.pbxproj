@@ -33,6 +33,7 @@
 		A254D47C2919D39900AC5006 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A254D47E2919D39900AC5006 /* Localizable.strings */; };
 		A254D4862919D49700AC5006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A254D4882919D49700AC5006 /* InfoPlist.strings */; };
 		A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D48A2919D6A500AC5006 /* I18NStrings.swift */; };
+		A29329F8291FF1280044816B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29329F7291FF1280044816B /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		A254D4872919D49700AC5006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A254D4892919D49900AC5006 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A254D48A2919D6A500AC5006 /* I18NStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18NStrings.swift; sourceTree = "<group>"; };
+		A29329F7291FF1280044816B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A2499A9B291DD47500A81D07 /* Auth */,
+				A29329F6291FF11B0044816B /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -212,6 +215,14 @@
 			path = Literal;
 			sourceTree = "<group>";
 		};
+		A29329F6291FF11B0044816B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A29329F7291FF1280044816B /* Router.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
+				A29329F8291FF1280044816B /* Router.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A254D4552918DE1300AC5006 /* ViewController.swift in Sources */,
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,

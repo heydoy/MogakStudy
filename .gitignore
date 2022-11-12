@@ -8,6 +8,10 @@ GoogleService-Info.plist
 .runtimeconfig.json
 .firebase/
 
+### Secrets
+Endpoint.swift
+Keys.swift
+
 ### Swift ###
 # Xcode
 #
