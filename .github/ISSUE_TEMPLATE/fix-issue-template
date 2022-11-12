@@ -1,0 +1,44 @@
+name: Fix Template
+description: 버그 수정 및 고칠 부분이 있을 때 사용하는 템플릿
+title: "[Fix] 이슈 제목"
+labels: ["Fix"]
+
+body:
+  - type: input
+    id: related-bug
+    attributes:
+      label: Related Bug
+      description: 관련된 버그 이슈
+      placeholder: "e.g. #32, #23"
+    validations:
+      required: false
+  - type: textarea
+    id: before-fix
+    attributes:
+      label: Current State
+      description: Fix 이전 상황
+      placeholder: "e.g. 완료버튼을 눌러도 아무런 변화가 없이 화면 전환 되는 부분"
+    validations:
+      required: true
+  - type: textarea
+    id: after-fix
+    attributes:
+      label: After State
+      description: Fix 이후 상황
+      placeholder: "e.g. 완료버튼 누르면 완료 토스트 메시지가 뜨고 0.8초 후 화면전환 "
+    validations:
+      required: true
+  - type: input
+    id: expected-period
+    attributes:
+      label: 예상 마감일 + 걸린 시간
+      placeholder: e.g ~ 11/11() + 3h
+    validations:
+      required: true
+  - type: input
+    id: real-period
+    attributes:
+      label: 실제 마감일 + 걸린 시간
+      placeholder: e.g. ~ 11/12(토) + 4.5h
+    validations:
+      required: false
