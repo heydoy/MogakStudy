@@ -1,0 +1,68 @@
+name: Bug Template
+description: 버그 발견 시 기록하는 템플릿
+title: "[Bug] 버그 이슈 "
+labels: ["bug"]
+
+body:
+  - type: input
+    id: os-environment
+    attributes:
+      label: OS 버전
+      description: 버그가 발생한 OS
+      placeholder: iOS 15.0
+    validations:
+      required: true
+  - type: input
+    id: ios-environment
+    attributes:
+      label: 앱 버전
+      description: 버그가 발생한 앱 버전
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: xcode-environment
+    attributes:
+      label: Xcode 버전
+      description: 버그가 발생한 Xcode 버전
+      placeholder: "13.4.2"
+    validations:
+      required: false
+  - type: dropdown
+    id: target
+    attributes:
+      label: 타겟 디바이스
+      description: 버그가 발생된 앱이 실행된 디바이스
+      options:
+        - Simulator
+        - Device
+    validations:
+      required: true
+      
+  - type: textarea
+    id: what-bug-is
+    attributes:
+      label: 버그 리포트
+      description: 버그 설명
+      placeholder: e.g. 중복으로 버튼이 눌리면 중복으로 저장되는 경우
+    validations:
+      required: true
+      
+  - type: textarea
+    id: where-bug
+    attributes:
+      label: Related View
+      description: 버그가 발생한 뷰 
+      placeholder: ex. ArticleView 
+    validations:
+      required: true
+      
+  - type: textarea
+    id: bug-flow
+    attributes:
+      label: Bug Flow(Optional)
+      description: 버그가 발생한 플로우
+      placeholder: e.g. 버튼을 눌렀을때 토스트메시지가 떠도 누를 경우 추가 토스트없이 저장이 됨 
+    validations:
+      required: false
+      
