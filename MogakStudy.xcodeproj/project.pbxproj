@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A203D24729225F8A00B11636 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24629225F8A00B11636 /* BaseVC.swift */; };
+		A203D24929225F9800B11636 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24829225F9800B11636 /* BaseView.swift */; };
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
 		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
 		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A203D24629225F8A00B11636 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		A203D24829225F9800B11636 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A203D24529225F7600B11636 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A203D24629225F8A00B11636 /* BaseVC.swift */,
+				A203D24829225F9800B11636 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 			children = (
 				A2932A25292257960044816B /* Onboarding */,
 				A2932A2829225A860044816B /* Concierge */,
+				A203D24529225F7600B11636 /* Base */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -353,8 +367,10 @@
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
+				A203D24729225F8A00B11636 /* BaseVC.swift in Sources */,
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
+				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
 				A2932A22292256A00044816B /* OnboardingView.swift in Sources */,
 			);
