@@ -33,9 +33,10 @@
 		A29329F8291FF1280044816B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29329F7291FF1280044816B /* Router.swift */; };
 		A2932A122921CBE00044816B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A2932A112921CBE00044816B /* FirebaseAuth */; };
 		A2932A142921CBE00044816B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A2932A132921CBE00044816B /* FirebaseMessaging */; };
-		A2932A16292214330044816B /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A15292214330044816B /* SplashVC.swift */; };
-		A2932A18292215280044816B /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2932A17292215280044816B /* Splash.storyboard */; };
 		A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A19292216880044816B /* UIView+UIStackView+Extension.swift */; };
+		A2932A22292256A00044816B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A21292256A00044816B /* OnboardingView.swift */; };
+		A2932A24292256B70044816B /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A23292256B70044816B /* OnboardingVC.swift */; };
+		A2932A27292257B30044816B /* ConciergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A26292257B30044816B /* ConciergeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,9 +62,10 @@
 		A254D4892919D49900AC5006 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A254D48A2919D6A500AC5006 /* I18NStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18NStrings.swift; sourceTree = "<group>"; };
 		A29329F7291FF1280044816B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		A2932A15292214330044816B /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
-		A2932A17292215280044816B /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		A2932A19292216880044816B /* UIView+UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		A2932A21292256A00044816B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A2932A23292256B70044816B /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		A2932A26292257B30044816B /* ConciergeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,8 @@
 		A254D4672919348D00AC5006 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A2932A15292214330044816B /* SplashVC.swift */,
-				A2932A17292215280044816B /* Splash.storyboard */,
+				A2932A25292257960044816B /* Onboarding */,
+				A2932A2829225A860044816B /* Concierge */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -225,6 +227,23 @@
 				A29329F7291FF1280044816B /* Router.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A2932A25292257960044816B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A2932A21292256A00044816B /* OnboardingView.swift */,
+				A2932A23292256B70044816B /* OnboardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A2932A2829225A860044816B /* Concierge */ = {
+			isa = PBXGroup;
+			children = (
+				A2932A26292257B30044816B /* ConciergeVC.swift */,
+			);
+			path = Concierge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +332,6 @@
 				A254D4652918DE9F00AC5006 /* .gitignore in Resources */,
 				A254D45D2918DE1500AC5006 /* LaunchScreen.storyboard in Resources */,
 				A254D47C2919D39900AC5006 /* Localizable.strings in Resources */,
-				A2932A18292215280044816B /* Splash.storyboard in Resources */,
 				A254D45A2918DE1500AC5006 /* Assets.xcassets in Resources */,
 				A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */,
 				A254D4752919790400AC5006 /* NotoSansCJKkr-Medium.otf in Resources */,
@@ -327,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2932A27292257B30044816B /* ConciergeVC.swift in Sources */,
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
+				A2932A24292256B70044816B /* OnboardingVC.swift in Sources */,
 				A29329F8291FF1280044816B /* Router.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
@@ -336,7 +356,7 @@
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
-				A2932A16292214330044816B /* SplashVC.swift in Sources */,
+				A2932A22292256A00044816B /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +522,6 @@
 				INFOPLIST_FILE = MogakStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -533,7 +552,6 @@
 				INFOPLIST_FILE = MogakStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
