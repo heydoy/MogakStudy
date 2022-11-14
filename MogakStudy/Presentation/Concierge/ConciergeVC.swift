@@ -61,7 +61,7 @@ class ConciergeVC: UIViewController {
         if networkReachableManager.reachability.connection == .unavailable {
            view.makeToast("네트워크 연결을 다시 확인해주세요", duration: 1.8, position: .center)
         } else {
-            if let idtoken = UserDefaults.standard.string(forKey: "idtoken") {
+            if let idtoken = LoginManager.shared.idToken {
                 // 로그인
                 print(idtoken)
             } else {
