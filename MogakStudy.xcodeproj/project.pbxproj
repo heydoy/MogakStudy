@@ -10,6 +10,11 @@
 		A203D24729225F8A00B11636 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24629225F8A00B11636 /* BaseVC.swift */; };
 		A203D24929225F9800B11636 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24829225F9800B11636 /* BaseView.swift */; };
 		A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24B292261ED00B11636 /* NetworkReachableManager.swift */; };
+		A20A456E2922B2E4003CC900 /* MogakStudyUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A456A2922B2DC003CC900 /* MogakStudyUIFramework.framework */; };
+		A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45712922BB4C003CC900 /* OnboardingModel.swift */; };
+		A20A45742922BC01003CC900 /* OnboardingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45732922BC01003CC900 /* OnboardingCVC.swift */; };
+		A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45752922BEB9003CC900 /* NSMutableAttributedString+Extension.swift */; };
+		A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45772922CC30003CC900 /* UICVC+Extension.swift */; };
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
 		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
 		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
@@ -42,10 +47,32 @@
 		A2932A27292257B30044816B /* ConciergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A26292257B30044816B /* ConciergeVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A20A45692922B2DC003CC900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2FB6D25291B23CA003EF7F9;
+			remoteInfo = MogakStudyUIFramework;
+		};
+		A20A456B2922B2DC003CC900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2FB6D2F291B23CB003EF7F9;
+			remoteInfo = MogakStudyUIFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A203D24629225F8A00B11636 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		A203D24829225F9800B11636 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A203D24B292261ED00B11636 /* NetworkReachableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachableManager.swift; sourceTree = "<group>"; };
+		A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MogakStudyUIFramework.xcodeproj; path = ../MogakStudyUIFramework/MogakStudyUIFramework.xcodeproj; sourceTree = "<group>"; };
+		A20A45712922BB4C003CC900 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		A20A45732922BC01003CC900 /* OnboardingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVC.swift; sourceTree = "<group>"; };
+		A20A45752922BEB9003CC900 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		A20A45772922CC30003CC900 /* UICVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICVC+Extension.swift"; sourceTree = "<group>"; };
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
@@ -82,6 +109,7 @@
 				A23E7A9C291A5BAF005B746F /* RxCocoa in Frameworks */,
 				A23E7A99291A5B43005B746F /* Alamofire in Frameworks */,
 				A2932A142921CBE00044816B /* FirebaseMessaging in Frameworks */,
+				A20A456E2922B2E4003CC900 /* MogakStudyUIFramework.framework in Frameworks */,
 				A23E7A93291A3BF3005B746F /* Toast in Frameworks */,
 				A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */,
 				A2932A122921CBE00044816B /* FirebaseAuth in Frameworks */,
@@ -112,6 +140,22 @@
 			path = NetworkReachable;
 			sourceTree = "<group>";
 		};
+		A20A45652922B2DB003CC900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20A456A2922B2DC003CC900 /* MogakStudyUIFramework.framework */,
+				A20A456C2922B2DC003CC900 /* MogakStudyUIFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20A456D2922B2E4003CC900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +177,11 @@
 		A254D4442918DE1300AC5006 = {
 			isa = PBXGroup;
 			children = (
+				A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */,
 				A254D4642918DE9F00AC5006 /* .gitignore */,
 				A254D44F2918DE1300AC5006 /* MogakStudy */,
 				A254D44E2918DE1300AC5006 /* Products */,
+				A20A456D2922B2E4003CC900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +278,8 @@
 			children = (
 				A254D4772919D1BD00AC5006 /* String+Extension.swift */,
 				A2932A19292216880044816B /* UIView+UIStackView+Extension.swift */,
+				A20A45772922CC30003CC900 /* UICVC+Extension.swift */,
+				A20A45752922BEB9003CC900 /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -259,6 +307,8 @@
 			children = (
 				A2932A21292256A00044816B /* OnboardingView.swift */,
 				A2932A23292256B70044816B /* OnboardingVC.swift */,
+				A20A45712922BB4C003CC900 /* OnboardingModel.swift */,
+				A20A45732922BC01003CC900 /* OnboardingCVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -340,12 +390,35 @@
 			);
 			productRefGroup = A254D44E2918DE1300AC5006 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A20A45652922B2DB003CC900 /* Products */;
+					ProjectRef = A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A254D44C2918DE1300AC5006 /* MogakStudy */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A20A456A2922B2DC003CC900 /* MogakStudyUIFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MogakStudyUIFramework.framework;
+			remoteRef = A20A45692922B2DC003CC900 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A20A456C2922B2DC003CC900 /* MogakStudyUIFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MogakStudyUIFrameworkTests.xctest;
+			remoteRef = A20A456B2922B2DC003CC900 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A254D44B2918DE1300AC5006 /* Resources */ = {
@@ -371,11 +444,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2932A27292257B30044816B /* ConciergeVC.swift in Sources */,
+				A20A45742922BC01003CC900 /* OnboardingCVC.swift in Sources */,
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A2932A24292256B70044816B /* OnboardingVC.swift in Sources */,
 				A29329F8291FF1280044816B /* Router.swift in Sources */,
+				A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
+				A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */,
+				A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A203D24729225F8A00B11636 /* BaseVC.swift in Sources */,
