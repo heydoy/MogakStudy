@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A203D24729225F8A00B11636 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24629225F8A00B11636 /* BaseVC.swift */; };
 		A203D24929225F9800B11636 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24829225F9800B11636 /* BaseView.swift */; };
+		A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24B292261ED00B11636 /* NetworkReachableManager.swift */; };
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
 		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
 		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		A203D24629225F8A00B11636 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		A203D24829225F9800B11636 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A203D24B292261ED00B11636 /* NetworkReachableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachableManager.swift; sourceTree = "<group>"; };
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
@@ -102,9 +104,18 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		A203D24A292261CB00B11636 /* NetworkReachable */ = {
+			isa = PBXGroup;
+			children = (
+				A203D24B292261ED00B11636 /* NetworkReachableManager.swift */,
+			);
+			path = NetworkReachable;
+			sourceTree = "<group>";
+		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A203D24A292261CB00B11636 /* NetworkReachable */,
 				A2499A9B291DD47500A81D07 /* Auth */,
 				A29329F6291FF11B0044816B /* Network */,
 			);
@@ -372,6 +383,7 @@
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
+				A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */,
 				A2932A22292256A00044816B /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
