@@ -15,8 +15,8 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fonts/NotoSansCJKkr-Regular.otf</string>
-		<string>Fonts/NotoSansCJKkr-Medium.otf</string>
+		<string>NotoSansCJKkr-Regular.otf</string>
+		<string>NotoSansCJKkr-Medium.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
