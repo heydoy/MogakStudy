@@ -48,14 +48,14 @@ body:
   - type: input
     id: expected-period
     attributes:
-      label: 예상 소요 기간
+      label: 예상 마감일 + 소요시간
       placeholder: ~ MM/dd(E)
     validations:
       required: true
   - type: input
     id: real-period
     attributes:
-      label: 실제 소요 기간
+      label: 실제 마감일 + 소요시간
       placeholder: ~ MM/dd(E) 
     validations:
       required: false
