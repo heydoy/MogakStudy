@@ -5,3 +5,48 @@
   Created by Doy Kim on 2022/11/08.
   
 */
+
+// Common
+"appName" = "새싹스터디";
+"ok" = "확인";
+"cancel" = "취소";
+
+// Onboarding
+"firstComment" = "위치 기반으로 빠르게\n주위 친구를 확인";
+"secondComment" = "스터디를 원하는 친구를\n찾을 수 있어요";
+"thirdComment" = "SeSAC Study";
+
+"attributedFirsteComment" = "위치 기반";
+"attributedSecondComment" = "스터디를 원하는 친구";
+
+"startButtonTitle" = "시작하기";
+
+// SMSAuth
+"pleaseEnterPhoneNumber" = "새싹 서비스 이용을 위해\n휴대폰 번호를 입력해 주세요";
+"phoneNumberInputPlaceholder" = "휴대폰 번호(-없이 숫자만 입력)";
+"phoneNumberButtonTitle" = "인증 문자 받기";
+"AuthSMSSent" = "인증번호가 문자로 전송되었어요";
+"authCodeInputPlaceholder" = "인증번호 입력";
+"resendButtonTitle" = "재전송";
+"authAndStartButtonTitle" = "인증하고 시작하기";
+
+// Signup
+"nextButtonTitle" = "다음";
+
+"pleaseEnterNickname" = "닉네임을 입력해 주세요";
+"nicknameInputPlaceholder" = "10자 이내로 입력";
+
+"pleaseEnterBirthday" = "생년월일을 알려주세요";
+"year" = "년";
+"month" = "월";
+"day" = "일";
+
+"pleaseEnterEmail" = "이메일을 입력해 주세요";
+"neededToChangePhoneNumber" = "휴대폰 번호 변경 시 인증을 위해 사용해요";
+"emailInputPlaceholer" = "SeSAC@email.com";
+
+"pleaseSelectGener" = "성별을 선택해 주세요";
+"neededToFindSesac" = "새싹 찾기 기능을 이용하기 위해서 필요해요!";
+"male" = "남자";
+"female" = "여자";
+
