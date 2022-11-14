@@ -26,9 +26,12 @@ class ConciergeVC: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
         configure()
         setConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         checkNetworkAvailability()
     }
     
@@ -55,8 +58,18 @@ class ConciergeVC: UIViewController {
     
     // MARK: - Actions
     func checkNetworkAvailability() {
-        networkReachableManager.isUnreachable { [weak self] _ in
-            self?.view.makeToast("네트워크 연결을 다시 확인해주세요", duration: 1.8, position: .center)
+        if networkReachableManager.reachability.connection == .unavailable {
+           view.makeToast("네트워크 연결을 다시 확인해주세요", duration: 1.8, position: .center)
+        } else {
+            if let idtoken = UserDefaults.standard.string(forKey: "idtoken") {
+                // 로그인
+                print(idtoken)
+            } else {
+                let vc = OnboardingVC()
+                vc.modalPresentationStyle = .fullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                self.present(vc, animated: true)
+            }
         }
     }
 }
