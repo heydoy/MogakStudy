@@ -31,3 +31,20 @@ extension Date {
         return validDate
     }
 }
+// 나이 계산
+extension Date {
+    func calculateAge() -> Int {
+        let calendar = Calendar.current
+        let birthDate = calendar.dateComponents([.year, .month, .day], from: self)
+    
+        
+        let now = calendar.dateComponents([.year, .month, .day], from: Date())
+        let ageComponents = calendar.dateComponents([.year], from: birthDate, to: now)
+        let age = ageComponents.year!
+        
+        return age
+    }
+    func checkAgeLimit() -> Bool {
+        return self.calculateAge() >= 17
+    }
+}
