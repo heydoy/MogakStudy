@@ -63,8 +63,14 @@ class ConciergeVC: UIViewController {
         } else {
             if let idtoken = LoginManager.shared.idToken {
                 // 로그인
-                print(idtoken)
+                print("idtoken", idtoken)
+                //let vc = SignupVC()
+                let vc = OnboardingVC()
+                vc.modalPresentationStyle = .fullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                self.present(vc, animated: true)
             } else {
+                // 온보딩
                 let vc = OnboardingVC()
                 vc.modalPresentationStyle = .fullScreen
                 vc.modalTransitionStyle = .crossDissolve
