@@ -12,32 +12,39 @@ class FBAuthManager {
     private init () {}
     
     static let shared = FBAuthManager()
-    typealias smsCompletion = () -> Void
     
     /// Fireabase를 통해 인증코드를 SMS로 보내기
-    func sendSMS(phoneNumber: String, completion: @escaping smsCompletion) {
+    func sendSMS(phoneNumber: String, completion: @escaping (Result<String, Error>) -> ()) {
         Auth.auth().languageCode = "ko" // 언어 설정
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
-            if let error = error {
-                print(error.localizedDescription)
+
+            guard let error = error else {
+                if let id = verificationID {
+                    completion(.success(id))
+                }
                 return
             }
+            completion(.failure(error))
             
             // Either received APNs or user has passed the reCAPTCHA
             // Step 5: Verification ID is saved for later use for verifying OTP with phone number
         }
     }
     
+    typealias codeCompletion = (AuthDataResult?, Error?) -> ()
+    
     /// Firebase 휴대전화 로그인
-    func phoneVerification(verificationID: String, verificationCode: String ) {
+    func phoneVerification(verificationID: String, verificationCode: String, completion: @escaping codeCompletion ) {
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
         
         Auth.auth().signIn(with: credential) { (authResult, error) in
             if let error = error {
                 let authError = error as NSError
                 print(authError.description)
+                completion(nil, error)
                 return
             }
+            completion(authResult, nil)
             
             // User has signed in successfully and currentUser object is valid
             let currentUserInstance = Auth.auth().currentUser
@@ -47,18 +54,21 @@ class FBAuthManager {
     }
     
     /// Firebase ID token 받아오기
-    func getIdToken() {
+    typealias tokenCompletion = (String?, Error?) -> Void
+    
+    func getIdToken(completion: @escaping tokenCompletion) {
         let currentUser = Auth.auth().currentUser
         currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
           if let error = error {
             // Handle error
-            print(error)
-            return;
+            completion(nil, error)
+            return
           }
             
           // Send token to your backend via HTTPS
           // ...
             print(idToken)
+            completion(idToken, nil)
         }
     }
 }
