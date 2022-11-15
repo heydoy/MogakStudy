@@ -38,6 +38,9 @@ class OnboardingVC: BaseVC {
     
     @objc func startButtonTapped(_ sender: UIButton) {
         // 이동
+        let vc = PhoneAuthVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
     
