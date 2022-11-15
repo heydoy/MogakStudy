@@ -31,6 +31,7 @@
 		A21FA988292406530000E8D2 /* SignupEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA987292406530000E8D2 /* SignupEmailVC.swift */; };
 		A21FA98A2924065E0000E8D2 /* SignupGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA9892924065E0000E8D2 /* SignupGenderView.swift */; };
 		A21FA98C292406680000E8D2 /* SignupGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA98B292406680000E8D2 /* SignupGenderVC.swift */; };
+		A21FA995292415930000E8D2 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA994292415930000E8D2 /* SignupViewModel.swift */; };
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
 		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
 		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
@@ -105,6 +106,7 @@
 		A21FA987292406530000E8D2 /* SignupEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailVC.swift; sourceTree = "<group>"; };
 		A21FA9892924065E0000E8D2 /* SignupGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGenderView.swift; sourceTree = "<group>"; };
 		A21FA98B292406680000E8D2 /* SignupGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGenderVC.swift; sourceTree = "<group>"; };
+		A21FA994292415930000E8D2 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		A21FA98F2924142D0000E8D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A21FA994292415930000E8D2 /* SignupViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
 				A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */,
 				A21FA98C292406680000E8D2 /* SignupGenderVC.swift in Sources */,
+				A21FA995292415930000E8D2 /* SignupViewModel.swift in Sources */,
 				A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */,
 				A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
