@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SignupVC: BaseVC {
+class SignupNicknameVC: BaseVC {
     
-    let mainView = SignupView()
+    let mainView = SignupNicknameView()
     
     override func loadView() {
         view = mainView

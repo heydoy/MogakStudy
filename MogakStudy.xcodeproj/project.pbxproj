@@ -23,8 +23,14 @@
 		A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45932922F7A9003CC900 /* ViewModelType.swift */; };
 		A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA972292315C20000E8D2 /* VerifySMSView.swift */; };
 		A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA976292315D00000E8D2 /* VerifySMSVC.swift */; };
-		A21FA97A29231B220000E8D2 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97929231B220000E8D2 /* SignupView.swift */; };
-		A21FA97C29231B370000E8D2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97B29231B370000E8D2 /* SignupVC.swift */; };
+		A21FA97A29231B220000E8D2 /* SignupNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97929231B220000E8D2 /* SignupNicknameView.swift */; };
+		A21FA97C29231B370000E8D2 /* SignupNicknameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97B29231B370000E8D2 /* SignupNicknameVC.swift */; };
+		A21FA982292406190000E8D2 /* SignupBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA981292406190000E8D2 /* SignupBirthdayView.swift */; };
+		A21FA9842924062A0000E8D2 /* SignupBirthdayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA9832924062A0000E8D2 /* SignupBirthdayVC.swift */; };
+		A21FA986292406480000E8D2 /* SignupEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA985292406480000E8D2 /* SignupEmailView.swift */; };
+		A21FA988292406530000E8D2 /* SignupEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA987292406530000E8D2 /* SignupEmailVC.swift */; };
+		A21FA98A2924065E0000E8D2 /* SignupGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA9892924065E0000E8D2 /* SignupGenderView.swift */; };
+		A21FA98C292406680000E8D2 /* SignupGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA98B292406680000E8D2 /* SignupGenderVC.swift */; };
 		A23E7A8A291A333D005B746F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A23E7A89291A333D005B746F /* GoogleService-Info.plist */; };
 		A23E7A8D291A3BC6005B746F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8C291A3BC6005B746F /* SnapKit */; };
 		A23E7A90291A3BD6005B746F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A8F291A3BD6005B746F /* Then */; };
@@ -91,8 +97,14 @@
 		A20A45932922F7A9003CC900 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A21FA972292315C20000E8D2 /* VerifySMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSView.swift; sourceTree = "<group>"; };
 		A21FA976292315D00000E8D2 /* VerifySMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSVC.swift; sourceTree = "<group>"; };
-		A21FA97929231B220000E8D2 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		A21FA97B29231B370000E8D2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		A21FA97929231B220000E8D2 /* SignupNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNicknameView.swift; sourceTree = "<group>"; };
+		A21FA97B29231B370000E8D2 /* SignupNicknameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNicknameVC.swift; sourceTree = "<group>"; };
+		A21FA981292406190000E8D2 /* SignupBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBirthdayView.swift; sourceTree = "<group>"; };
+		A21FA9832924062A0000E8D2 /* SignupBirthdayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBirthdayVC.swift; sourceTree = "<group>"; };
+		A21FA985292406480000E8D2 /* SignupEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailView.swift; sourceTree = "<group>"; };
+		A21FA987292406530000E8D2 /* SignupEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailVC.swift; sourceTree = "<group>"; };
+		A21FA9892924065E0000E8D2 /* SignupGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGenderView.swift; sourceTree = "<group>"; };
+		A21FA98B292406680000E8D2 /* SignupGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGenderVC.swift; sourceTree = "<group>"; };
 		A23E7A89291A333D005B746F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
@@ -207,8 +219,14 @@
 		A21FA97829231B140000E8D2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				A21FA97929231B220000E8D2 /* SignupView.swift */,
-				A21FA97B29231B370000E8D2 /* SignupVC.swift */,
+				A21FA97929231B220000E8D2 /* SignupNicknameView.swift */,
+				A21FA97B29231B370000E8D2 /* SignupNicknameVC.swift */,
+				A21FA981292406190000E8D2 /* SignupBirthdayView.swift */,
+				A21FA9832924062A0000E8D2 /* SignupBirthdayVC.swift */,
+				A21FA985292406480000E8D2 /* SignupEmailView.swift */,
+				A21FA987292406530000E8D2 /* SignupEmailVC.swift */,
+				A21FA9892924065E0000E8D2 /* SignupGenderView.swift */,
+				A21FA98B292406680000E8D2 /* SignupGenderVC.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -505,7 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21FA97A29231B220000E8D2 /* SignupView.swift in Sources */,
+				A21FA97A29231B220000E8D2 /* SignupNicknameView.swift in Sources */,
 				A2932A27292257B30044816B /* ConciergeVC.swift in Sources */,
 				A20A45742922BC01003CC900 /* OnboardingCVC.swift in Sources */,
 				A20A45852922EF4D003CC900 /* LoginManager.swift in Sources */,
@@ -513,23 +531,29 @@
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A2932A24292256B70044816B /* OnboardingVC.swift in Sources */,
 				A29329F8291FF1280044816B /* Router.swift in Sources */,
+				A21FA9842924062A0000E8D2 /* SignupBirthdayVC.swift in Sources */,
+				A21FA98A2924065E0000E8D2 /* SignupGenderView.swift in Sources */,
+				A21FA986292406480000E8D2 /* SignupEmailView.swift in Sources */,
 				A20A457B2922E63E003CC900 /* Date+Extension.swift in Sources */,
 				A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A20A458F2922F1DE003CC900 /* PhoneAuthVC.swift in Sources */,
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
 				A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */,
+				A21FA98C292406680000E8D2 /* SignupGenderVC.swift in Sources */,
 				A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */,
 				A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A203D24729225F8A00B11636 /* BaseVC.swift in Sources */,
 				A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */,
-				A21FA97C29231B370000E8D2 /* SignupVC.swift in Sources */,
+				A21FA97C29231B370000E8D2 /* SignupNicknameVC.swift in Sources */,
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
+				A21FA988292406530000E8D2 /* SignupEmailVC.swift in Sources */,
 				A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
+				A21FA982292406190000E8D2 /* SignupBirthdayView.swift in Sources */,
 				A20A45912922F77F003CC900 /* AuthViewModel.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
 				A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */,
