@@ -219,16 +219,40 @@
 		A21FA97829231B140000E8D2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				A21FA97929231B220000E8D2 /* SignupNicknameView.swift */,
-				A21FA97B29231B370000E8D2 /* SignupNicknameVC.swift */,
-				A21FA981292406190000E8D2 /* SignupBirthdayView.swift */,
-				A21FA9832924062A0000E8D2 /* SignupBirthdayVC.swift */,
-				A21FA985292406480000E8D2 /* SignupEmailView.swift */,
-				A21FA987292406530000E8D2 /* SignupEmailVC.swift */,
-				A21FA9892924065E0000E8D2 /* SignupGenderView.swift */,
-				A21FA98B292406680000E8D2 /* SignupGenderVC.swift */,
+				A21FA98F2924142D0000E8D2 /* ViewModel */,
+				A21FA98D2924141C0000E8D2 /* View */,
+				A21FA990292414320000E8D2 /* VC */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		A21FA98D2924141C0000E8D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A21FA97929231B220000E8D2 /* SignupNicknameView.swift */,
+				A21FA981292406190000E8D2 /* SignupBirthdayView.swift */,
+				A21FA985292406480000E8D2 /* SignupEmailView.swift */,
+				A21FA9892924065E0000E8D2 /* SignupGenderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A21FA98F2924142D0000E8D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A21FA990292414320000E8D2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A21FA97B29231B370000E8D2 /* SignupNicknameVC.swift */,
+				A21FA9832924062A0000E8D2 /* SignupBirthdayVC.swift */,
+				A21FA987292406530000E8D2 /* SignupEmailVC.swift */,
+				A21FA98B292406680000E8D2 /* SignupGenderVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
