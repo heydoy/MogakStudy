@@ -54,6 +54,9 @@ class verifySMSVC: BaseVC {
                             AF.request(Router.userLogin).response { data in
                                 print(data)
                                 print(data.response?.statusCode)
+                                let viewController = SignupNicknameVC()
+                                viewController.modalPresentationStyle = .fullScreen
+                                vc.present(viewController, animated: true)
                             }
                         }
                     }
