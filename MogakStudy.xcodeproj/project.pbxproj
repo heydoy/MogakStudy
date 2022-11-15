@@ -199,11 +199,9 @@
 		A20A45882922F1A0003CC900 /* PhoneAuth */ = {
 			isa = PBXGroup;
 			children = (
-				A20A458B2922F1C3003CC900 /* PhoneAuthView.swift */,
-				A20A458E2922F1DE003CC900 /* PhoneAuthVC.swift */,
-				A21FA972292315C20000E8D2 /* VerifySMSView.swift */,
-				A21FA976292315D00000E8D2 /* VerifySMSVC.swift */,
-				A20A45902922F77F003CC900 /* AuthViewModel.swift */,
+				A21FA993292414970000E8D2 /* ViewModel */,
+				A21FA992292414930000E8D2 /* View */,
+				A21FA9912924148E0000E8D2 /* VC */,
 			);
 			path = PhoneAuth;
 			sourceTree = "<group>";
@@ -253,6 +251,32 @@
 				A21FA98B292406680000E8D2 /* SignupGenderVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		A21FA9912924148E0000E8D2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A20A458E2922F1DE003CC900 /* PhoneAuthVC.swift */,
+				A21FA976292315D00000E8D2 /* VerifySMSVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		A21FA992292414930000E8D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A20A458B2922F1C3003CC900 /* PhoneAuthView.swift */,
+				A21FA972292315C20000E8D2 /* VerifySMSView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A21FA993292414970000E8D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A20A45902922F77F003CC900 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
