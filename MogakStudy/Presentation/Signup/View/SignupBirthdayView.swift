@@ -23,7 +23,7 @@ class SignupBirthdayView: BaseView {
     var monthStackView = UIStackView()
     var dayStackView = UIStackView()
     
-    let birthYInput = msInput(status: InactiveInput()).then {
+    let birthYInput = msInput(status: ActiveInput()).then {
         $0.placeholder = "1990"
         $0.font = .Title4_R14
         $0.isUserInteractionEnabled = false
@@ -32,7 +32,7 @@ class SignupBirthdayView: BaseView {
         $0.text = I18NStrings.Signup.year
         $0.font = .Title2_R16
     }
-    let birthMInput = msInput(status: InactiveInput()).then {
+    let birthMInput = msInput(status: ActiveInput()).then {
         $0.placeholder = "1"
         $0.font = .Title4_R14
         $0.isUserInteractionEnabled = false
@@ -41,7 +41,7 @@ class SignupBirthdayView: BaseView {
         $0.text = I18NStrings.Signup.month
         $0.font = .Title2_R16
     }
-    let birthDInput = msInput(status: InactiveInput()).then {
+    let birthDInput = msInput(status: ActiveInput()).then {
         $0.placeholder = "1"
         $0.font = .Title4_R14
         $0.isUserInteractionEnabled = false
@@ -51,7 +51,21 @@ class SignupBirthdayView: BaseView {
         $0.font = .Title2_R16
     }
     
-    let nextButton = msButton(status: DisableButton()).then {
+    let datePicker = UIDatePicker().then {
+        $0.locale = Locale(identifier: "ko-KR")
+        $0.preferredDatePickerStyle = .wheels
+        $0.datePickerMode = .date
+        $0.becomeFirstResponder()
+        
+        var components = DateComponents()
+        components.year = 1990
+        components.month = 1
+        components.day = 1
+        
+        $0.date = Calendar(identifier: .gregorian).date(from: components)!
+    }
+    
+    let nextButton = msButton(status: FillButton()).then {
         $0.setTitle(I18NStrings.Signup.nextButtonTitle, for: .normal)
     }
     
@@ -66,7 +80,7 @@ class SignupBirthdayView: BaseView {
             yearStackView, monthStackView, dayStackView
         )
         
-        addSubviews(guideLabel, stackView, nextButton)
+        addSubviews(guideLabel, stackView, nextButton, datePicker)
         
         // 스택뷰 설정
         stackView.spacing = 23
@@ -95,6 +109,10 @@ class SignupBirthdayView: BaseView {
         guideLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(stackView.snp.top).offset(-40)
+        }
+        
+        datePicker.snp.makeConstraints { make in
+            make.leading.bottom.trailing.equalTo(safeAreaLayoutGuide)
         }
     }
     
