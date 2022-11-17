@@ -338,8 +338,8 @@
 		A21FA9A32925D98C0000E8D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A21FA9A42925D9970000E8D2 /* HomeView.swift */,
-				A21FA9A62925D9A50000E8D2 /* HomeVC.swift */,
+				A21FA9B2292639030000E8D2 /* View */,
+				A21FA9B32926390B0000E8D2 /* VC */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -350,6 +350,46 @@
 				A21FA9A9292622990000E8D2 /* Keys.swift */,
 			);
 			path = Keys;
+			sourceTree = "<group>";
+		};
+		A21FA9AD292638C10000E8D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2932A21292256A00044816B /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A21FA9B0292638D20000E8D2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A2932A23292256B70044816B /* OnboardingVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		A21FA9B1292638DA0000E8D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A20A45732922BC01003CC900 /* OnboardingCVC.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A21FA9B2292639030000E8D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A21FA9A42925D9970000E8D2 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A21FA9B32926390B0000E8D2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A21FA9A62925D9A50000E8D2 /* HomeVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
@@ -510,10 +550,10 @@
 		A2932A25292257960044816B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				A2932A21292256A00044816B /* OnboardingView.swift */,
-				A2932A23292256B70044816B /* OnboardingVC.swift */,
+				A21FA9AD292638C10000E8D2 /* View */,
+				A21FA9B0292638D20000E8D2 /* VC */,
+				A21FA9B1292638DA0000E8D2 /* Cell */,
 				A20A45712922BB4C003CC900 /* OnboardingModel.swift */,
-				A20A45732922BC01003CC900 /* OnboardingCVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
