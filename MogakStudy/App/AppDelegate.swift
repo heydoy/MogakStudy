@@ -42,8 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else if let token = token {
                 print("FCM registration token: \(token)")
                 //self.fcmRegTokenMessage.text  = "Remote FCM registration token: \(token)"
-                // FCM 토큰 저장
-                LoginManager.shared.FCMtoken = token
+                // FCM 토큰 저장  - 현재는 메모리스 토큰으로 
+                LoginManager.shared.FCMtoken = Keys.fcmToken
             }
         }
         
