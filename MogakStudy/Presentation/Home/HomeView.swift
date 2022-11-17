@@ -1,19 +1,22 @@
 //
-//  SignupView.swift
+//  HomeView.swift
 //  MogakStudy
 //
-//  Created by Doy Kim on 2022/11/15.
+//  Created by Doy Kim on 2022/11/17.
 //
 
 import UIKit
 
-class SignupView: BaseView {
+class HomeView: BaseView {
+    
+    
     
     override func setupUI() {
-        super.setupUI()
+        
     }
     
     override func setConstraints() {
         
     }
+
 }

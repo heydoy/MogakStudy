@@ -36,6 +36,13 @@ class PhoneAuthVC: BaseVC {
         
         let output = viewModel.transform(input: input)
         
+        mainView.phoneInput
+            .rx.text
+            .orEmpty
+            .map { $0.applyPatternOnNumbers(pattern: "###-####-####", replacmentCharacter: "#")}
+            .bind(to: mainView.phoneInput.rx.text)
+            .disposed(by: disposeBag)
+        
         output.phoneNumberValidation
             .withUnretained(self)
             .bind { (vc, bool) in
@@ -49,12 +56,14 @@ class PhoneAuthVC: BaseVC {
         output.getCodeButtonTap
             .withUnretained(self)
             .bind { (vc, _) in
-                vc.viewModel.sendSMS(phoneNumber: ("+82 " + vc.mainView.phoneInput.text!))  { bool in
+                let phoneNumber = "+82 " + vc.mainView.phoneInput.text!
+                vc.viewModel.sendSMS(phoneNumber: phoneNumber )  { bool in
                     if bool {
                         let viewController = verifySMSVC()
                         viewController.modalPresentationStyle = .fullScreen
                         vc.present(viewController, animated: true)
                         viewController.viewModel = vc.viewModel
+                        viewController.phoneNumber = phoneNumber
                     }
                 }
             }

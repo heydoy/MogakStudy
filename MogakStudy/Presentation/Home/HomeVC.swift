@@ -1,20 +1,24 @@
 //
-//  SignupVC.swift
+//  HomeVC.swift
 //  MogakStudy
 //
-//  Created by Doy Kim on 2022/11/15.
+//  Created by Doy Kim on 2022/11/17.
 //
 
 import UIKit
 
-class SignupVC: BaseVC {
+class HomeVC: UIViewController {
     
-    let mainView = SignupView()
+    let mainView = HomeView()
     
     override func loadView() {
         view = mainView
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
+
+
 }

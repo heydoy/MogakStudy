@@ -50,3 +50,8 @@
 "male" = "남자";
 "female" = "여자";
 
+// 탭바 이름
+"homeTab" = "홈";
+"shopTab" = "새싹샵";
+"friendTab" = "새싹친구";
+"mypageTab" = "내정보";

@@ -2,17 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSAppTransportSecurity</key>
-        <dict>
-            <key>NSExceptionDomains</key>
-            <dict>
-                <key>api.sesac.co.kr</key>
-                <dict>
-                    <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-                    <true/>
-                </dict>
-            </dict>
-        </dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -20,10 +9,23 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>app-1-728640230909-ios-91f380f92968bf75a43594</string>
+				<string>app-1-355153590205-ios-5d4a8ca9947951ab9e04d4</string>
 			</array>
 		</dict>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.sesac.co.kr</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSansCJKkr-Regular.otf</string>

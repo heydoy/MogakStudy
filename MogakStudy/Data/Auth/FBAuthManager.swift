@@ -17,7 +17,7 @@ class FBAuthManager {
     func sendSMS(phoneNumber: String, completion: @escaping (Result<String, Error>) -> ()) {
         Auth.auth().languageCode = "ko" // 언어 설정
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
-
+            
             guard let error = error else {
                 if let id = verificationID {
                     completion(.success(id))
@@ -31,44 +31,46 @@ class FBAuthManager {
         }
     }
     
-    typealias codeCompletion = (AuthDataResult?, Error?) -> ()
-    
     /// Firebase 휴대전화 로그인
-    func phoneVerification(verificationID: String, verificationCode: String, completion: @escaping codeCompletion ) {
+    func phoneVerification(verificationID: String, verificationCode: String, completion: @escaping (Result<AuthDataResult?, Error>) -> () ) {
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
         
         Auth.auth().signIn(with: credential) { (authResult, error) in
             if let error = error {
                 let authError = error as NSError
                 print(authError.description)
-                completion(nil, error)
+                completion(.failure(error))
                 return
             }
-            completion(authResult, nil)
-            
-            // User has signed in successfully and currentUser object is valid
-            let currentUserInstance = Auth.auth().currentUser
-            
-            print(currentUserInstance)
+            if let authResult = authResult {
+                // User has signed in successfully and currentUser object is valid
+                let currentUserInstance = Auth.auth().currentUser
+                print(currentUserInstance)
+                completion(.success(authResult))
+            }
         }
     }
     
     /// Firebase ID token 받아오기
-    typealias tokenCompletion = (String?, Error?) -> Void
     
-    func getIdToken(completion: @escaping tokenCompletion) {
+    func getIdToken(completion: @escaping (Result<String, Error>) -> ()) {
         let currentUser = Auth.auth().currentUser
         currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
-          if let error = error {
-            // Handle error
-            completion(nil, error)
-            return
-          }
+            if let error = error {
+                // Handle error
+                completion(.failure(error))
+                return
+            }
             
-          // Send token to your backend via HTTPS
-          // ...
-            print(idToken)
-            completion(idToken, nil)
+            // Send token to your backend via HTTPS
+            // ...
+            
+            if let idtoken = idToken {
+                LoginManager.shared.idToken = idtoken
+                print(idtoken)
+                completion(.success(idtoken))
+            }
+            
         }
     }
 }

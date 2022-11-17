@@ -10,7 +10,7 @@ import Alamofire
 
 enum Router: URLRequestConvertible {
     case userLogin
-    case userSignup(phoneNumber: String, FCMtoken: String, nick: String, birth: Date, email: String, gender: Int)
+    case userSignup(phoneNumber: String, FCMtoken: String, nick: String, birth: String, email: String, gender: Int)
     case userWithdraw
     case userUpdateFCMToken
     

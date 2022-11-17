@@ -52,4 +52,11 @@ struct I18NStrings {
         static let male = "male".localized
         static let female = "female".localized
     }
+    struct TabBar {
+        static let homeTab = "homeTab".localized
+        static let shopTab = "shopTab".localized
+        static let friendTab = "friendTab".localized
+        static let mypageTab = "mypageTab".localized
+        
+    }
 }
