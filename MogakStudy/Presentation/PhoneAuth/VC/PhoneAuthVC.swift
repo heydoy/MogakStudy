@@ -36,6 +36,13 @@ class PhoneAuthVC: BaseVC {
         
         let output = viewModel.transform(input: input)
         
+        mainView.phoneInput
+            .rx.text
+            .orEmpty
+            .map { $0.applyPatternOnNumbers(pattern: "###-####-####", replacmentCharacter: "#")}
+            .bind(to: mainView.phoneInput.rx.text)
+            .disposed(by: disposeBag)
+        
         output.phoneNumberValidation
             .withUnretained(self)
             .bind { (vc, bool) in
