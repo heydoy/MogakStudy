@@ -34,9 +34,10 @@ class VerifySMSView: BaseView {
         $0.text = "00:20"
     }
     
-    let resendButton = msButton(status: FillButton()).then {
+    let resendButton = msButton(status: InactiveButton()).then {
         $0.setTitle(I18NStrings.SMSAuth.resendButtonTitle, for: .normal)
         $0.titleLabel?.font = .Body3_R14
+        $0.isEnabled = false
     }
     
     let verifyCodeButton = msButton(status: DisableButton()).then {
