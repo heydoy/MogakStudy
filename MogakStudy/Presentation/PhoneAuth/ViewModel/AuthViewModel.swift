@@ -32,25 +32,30 @@ class AuthViewModel: ViewModelType {
     }
     
     func phoneVerify(code: String) {
-        FBAuthManager.shared.phoneVerification(verificationID: verificationID, verificationCode: code) { result, error in
-            if let result = result {
-                print(result, "성공인가")
+        FBAuthManager.shared.phoneVerification(verificationID: verificationID, verificationCode: code) { result in
+            switch result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error)
             }
         }
     }
     
     func getToken(completion: @escaping (Bool) -> ()) {
-        FBAuthManager.shared.getIdToken { idToken, error in
-            if let idToken = idToken {
+        FBAuthManager.shared.getIdToken { result in
+            switch result {
+            case .success(let idToken):
                 LoginManager.shared.idToken = idToken
                 print(LoginManager.shared.idToken)
                 completion(true)
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion(false)
             }
-            
-            completion(false)
         }
     }
-
+    
     
     //인풋-아웃풋 패턴
     
