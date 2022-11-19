@@ -55,3 +55,6 @@
 "shopTab" = "새싹샵";
 "friendTab" = "새싹친구";
 "mypageTab" = "내정보";
+
+// 홈탭
+"whole" = "전체";

@@ -22,7 +22,7 @@ class TabBarVC: UITabBarController {
     }
     
     func setTabBarController() {
-        let homeVC = UIViewController()
+        let homeVC = HomeVC()
         homeVC.tabBarItem = UITabBarItem(title: I18NStrings.TabBar.homeTab,
                                          image: UIImage(named: "tab_home_act"),
                                         selectedImage: UIImage(named: "tab_home_inact"))
