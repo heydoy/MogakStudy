@@ -61,6 +61,7 @@ extension MypageVC {
             }
             cell.contentConfiguration = content
             cell.indentationWidth = 17
+            cell.separatorLayoutGuide.leadingAnchor.constraint(equalTo: cell.leadingAnchor,constant: 17).isActive = true
             
             var background = UIBackgroundConfiguration.listPlainCell()
             background.backgroundColor = .clear
