@@ -64,7 +64,7 @@ class ConciergeVC: UIViewController {
             if let idtoken = LoginManager.shared.idToken {
                 // 로그인
                 print("idtoken", idtoken)
-                let vc = verifySMSVC()
+                let vc = TabBarVC()
                 vc.modalPresentationStyle = .fullScreen
                 vc.modalTransitionStyle = .crossDissolve
                 self.present(vc, animated: true)
