@@ -23,6 +23,8 @@
 		A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45932922F7A9003CC900 /* ViewModelType.swift */; };
 		A20FCA3929291BDF00D69243 /* MyPageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA3829291BDF00D69243 /* MyPageTitle.swift */; };
 		A20FCA3B2929300C00D69243 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA3A2929300C00D69243 /* UIViewController+Extension.swift */; };
+		A20FCA4129293B4000D69243 /* InfoManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA4029293B4000D69243 /* InfoManageView.swift */; };
+		A20FCA4329293B5900D69243 /* InfoManageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA4229293B5900D69243 /* InfoManageVC.swift */; };
 		A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA972292315C20000E8D2 /* VerifySMSView.swift */; };
 		A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA976292315D00000E8D2 /* VerifySMSVC.swift */; };
 		A21FA97A29231B220000E8D2 /* SignupNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97929231B220000E8D2 /* SignupNicknameView.swift */; };
@@ -106,6 +108,8 @@
 		A20A45932922F7A9003CC900 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A20FCA3829291BDF00D69243 /* MyPageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTitle.swift; sourceTree = "<group>"; };
 		A20FCA3A2929300C00D69243 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A20FCA4029293B4000D69243 /* InfoManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManageView.swift; sourceTree = "<group>"; };
+		A20FCA4229293B5900D69243 /* InfoManageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManageVC.swift; sourceTree = "<group>"; };
 		A21FA972292315C20000E8D2 /* VerifySMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSView.swift; sourceTree = "<group>"; };
 		A21FA976292315D00000E8D2 /* VerifySMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSVC.swift; sourceTree = "<group>"; };
 		A21FA97929231B220000E8D2 /* SignupNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNicknameView.swift; sourceTree = "<group>"; };
@@ -238,6 +242,15 @@
 				A20FCA3829291BDF00D69243 /* MyPageTitle.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A20FCA3D29293B2400D69243 /* InfoManage */ = {
+			isa = PBXGroup;
+			children = (
+				A20FCA4029293B4000D69243 /* InfoManageView.swift */,
+				A20FCA4229293B5900D69243 /* InfoManageVC.swift */,
+			);
+			path = InfoManage;
 			sourceTree = "<group>";
 		};
 		A21FA97829231B140000E8D2 /* Signup */ = {
@@ -473,6 +486,7 @@
 			children = (
 				A21FA9A32925D98C0000E8D2 /* Home */,
 				A21FA99B2925C4480000E8D2 /* Mypage */,
+				A20FCA3D29293B2400D69243 /* InfoManage */,
 				A21FA99629246A170000E8D2 /* TabBar */,
 				A21FA97829231B140000E8D2 /* Signup */,
 				A20A45882922F1A0003CC900 /* PhoneAuth */,
@@ -739,11 +753,13 @@
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
 				A21FA988292406530000E8D2 /* SignupEmailVC.swift in Sources */,
 				A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */,
+				A20FCA4129293B4000D69243 /* InfoManageView.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
 				A21FA982292406190000E8D2 /* SignupBirthdayView.swift in Sources */,
 				A20A45912922F77F003CC900 /* AuthViewModel.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
+				A20FCA4329293B5900D69243 /* InfoManageVC.swift in Sources */,
 				A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */,
 				A2932A22292256A00044816B /* OnboardingView.swift in Sources */,
 			);
