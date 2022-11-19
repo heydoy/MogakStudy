@@ -57,6 +57,8 @@ struct I18NStrings {
         static let shopTab = "shopTab".localized
         static let friendTab = "friendTab".localized
         static let mypageTab = "mypageTab".localized
-        
+    }
+    struct Home {
+        static let whole = "whole".localized
     }
 }
