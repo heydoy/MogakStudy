@@ -8,26 +8,6 @@
 import UIKit
 import MogakStudyUIFramework
 
-enum MyPageTitle: String, CaseIterable {
-    case username = "사용자 이름"
-    case noti = "공지사항"
-    case ask = "1:1 문의"
-    case alert = "알림 설정"
-    case terms = "이용약관"
-    
-    var image: String {
-        get {
-            switch self {
-            case .username: return "imageName"
-            case .noti: return "imageName"
-            case .ask: return "imageName"
-            case .alert: return "imageName"
-            case .terms: return "imageName"
-            }
-        }
-    }
-}
-
 
 typealias Item = MyPageTitle
 typealias Section = Int
@@ -51,7 +31,7 @@ class MypageVC: BaseVC {
     }
     
     override func configure() {
-        //mainView.collectionView.delegate = self
+        mainView.collectionView.delegate = self
         mainView.collectionView.collectionViewLayout = createLayout()
         configureDataSource()
     }
@@ -60,8 +40,9 @@ class MypageVC: BaseVC {
 extension MypageVC {
     func  createLayout() -> UICollectionViewLayout {
         let config = UICollectionLayoutListConfiguration(appearance: .plain)
-        let layout = UICollectionViewCompositionalLayout.list(using: config)
+        //let section = NSCollectionLayoutSection(group: group)
         
+        let layout = UICollectionViewCompositionalLayout.list(using: config)
         
         return layout
     }
@@ -73,12 +54,14 @@ extension MypageVC {
             
             content.textProperties.font = .Title2_R16
             content.textProperties.color = .msColor.black
-            content.text = itemIdentifier.rawValue
+            content.text = itemIdentifier.title
+            content.image = UIImage(named: itemIdentifier.image)
             
-            content.image = UIImage(systemName: "person")
-            //content.image = UIImage(named: itemIdentifier.image)
-                        
+            if itemIdentifier == Item.username {
+            cell.accessories = [.disclosureIndicator(options: .init( reservedLayoutWidth: .custom(48), tintColor: .msColor.gray007))]
+            }
             cell.contentConfiguration = content
+            cell.indentationWidth = 17
             
             var background = UIBackgroundConfiguration.listPlainCell()
             background.backgroundColor = .clear
@@ -104,5 +87,13 @@ extension MypageVC {
         snapshot.appendItems(Item.allCases, toSection: 0)
         
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+extension MypageVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.item == Item.username.rawValue {
+            // 정보관리로 이동
+            print("정보관리로 이동")
+        }
     }
 }
