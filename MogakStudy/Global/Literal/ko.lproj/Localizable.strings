@@ -58,3 +58,31 @@
 
 // 홈탭
 "whole" = "전체";
+
+// 내정보
+"notice" = "공지사항";
+"faq" = "자주 묻는 질문";
+"qna" = "1:1 문의";
+"alertSetting" = "알림 설정";
+"permit" = "이용약관";
+
+// 정보관리
+"infoManagement" = "정보 관리";
+"save" = "저장";
+"myGender" = "내 성별";
+"studyAlot" = "자주 하는 스터디";
+"pleaseEnterStudyPlaceholder" = "스터디를 입력해 주세요";
+"allowSearchMynumber" = "내 번호 검색 허용";
+"ageSpan" = "상대방 연령대";
+"withdraw" = "회원탈퇴";
+
+// 펼쳐졌을 때 내용
+"sesacTitle" = "새싹 타이틀";
+"goodManner" = "좋은 매너";
+"punctuality" = "정확한 시간 약속";
+"fastResponse" = "빠른 응답";
+"kindPersonality" = "친절한 성격";
+"proficiency" = "능숙한 실력";
+"beneficialTime" = "유익한 시간";
+"sesacReview" = "새싹 리뷰";
+"waitingForFirstReviewPlaceholder" = "첫 리뷰를 기다리는 중이에요!";
