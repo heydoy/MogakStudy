@@ -7,6 +7,7 @@
 
 import UIKit
 import MogakStudyUIFramework
+import SwiftUI
 
 
 typealias Item = MyPageTitle
@@ -95,5 +96,11 @@ extension MypageVC: UICollectionViewDelegateFlowLayout {
             // 정보관리로 이동
             print("정보관리로 이동")
         }
+    }
+}
+
+struct VCPreView:PreviewProvider {
+    static var previews: some View {
+        TabBarVC().toPreview()
     }
 }
