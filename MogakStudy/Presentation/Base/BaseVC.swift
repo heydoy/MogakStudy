@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MogakStudyUIFramework
 
 /// 베이스 뷰 컨트롤러
 /// - loadView() 메서드를 오버라이드한 후 view를 커스텀 뷰로 교체해줄 수 있다.
@@ -23,5 +24,22 @@ class BaseVC: UIViewController {
     
     /// 네비게이션 바 설정
     /// - 타이틀, 아이템 등 네비게이션과 관련된 설정을 합니다.
-    func setNavigationBar() {}
+    func setNavigationBar() {
+        navigationController?.navigationBar.tintColor = .msColor.black
+        
+        if self != navigationController?.viewControllers.first {
+            let customBackButton = UIBarButtonItem(
+                image: UIImage(named: "arrow"),
+                style: .plain,
+                target: self,
+                action: #selector(backButtonTapped) )
+            
+            navigationItem.leftBarButtonItem = customBackButton
+        }
+    }
+    
+    @objc
+    func backButtonTapped(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+    }
 }

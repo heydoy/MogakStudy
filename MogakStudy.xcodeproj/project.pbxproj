@@ -23,6 +23,7 @@
 		A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45932922F7A9003CC900 /* ViewModelType.swift */; };
 		A20FCA3929291BDF00D69243 /* MyPageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA3829291BDF00D69243 /* MyPageTitle.swift */; };
 		A20FCA3B2929300C00D69243 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA3A2929300C00D69243 /* UIViewController+Extension.swift */; };
+		A20FCA4329293B5900D69243 /* InfoManageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FCA4229293B5900D69243 /* InfoManageVC.swift */; };
 		A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA972292315C20000E8D2 /* VerifySMSView.swift */; };
 		A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA976292315D00000E8D2 /* VerifySMSVC.swift */; };
 		A21FA97A29231B220000E8D2 /* SignupNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21FA97929231B220000E8D2 /* SignupNicknameView.swift */; };
@@ -49,6 +50,7 @@
 		A23E7A9E291A5BAF005B746F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7A9D291A5BAF005B746F /* RxSwift */; };
 		A23E7AA1291A5C1B005B746F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA0291A5C1B005B746F /* Reachability */; };
 		A23E7AA4291A5CA2005B746F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = A23E7AA3291A5CA2005B746F /* Hero */; };
+		A2434C2829295BB20035B1DB /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2434C2729295BB20035B1DB /* UserCardView.swift */; };
 		A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2499A9C291DD48900A81D07 /* FBAuthManager.swift */; };
 		A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4502918DE1300AC5006 /* AppDelegate.swift */; };
 		A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D4522918DE1300AC5006 /* SceneDelegate.swift */; };
@@ -63,6 +65,16 @@
 		A254D47C2919D39900AC5006 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A254D47E2919D39900AC5006 /* Localizable.strings */; };
 		A254D4862919D49700AC5006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A254D4882919D49700AC5006 /* InfoPlist.strings */; };
 		A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254D48A2919D6A500AC5006 /* I18NStrings.swift */; };
+		A28299B6292A784600688EC9 /* AloeStackView in Frameworks */ = {isa = PBXBuildFile; productRef = A28299B5292A784600688EC9 /* AloeStackView */; };
+		A28299B8292A8C1400688EC9 /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299B7292A8C1400688EC9 /* UserImageView.swift */; };
+		A28299BA292A8DA800688EC9 /* AllowPhoneSearhView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299B9292A8DA800688EC9 /* AllowPhoneSearhView.swift */; };
+		A28299BC292A8F3A00688EC9 /* WithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299BB292A8F3A00688EC9 /* WithdrawView.swift */; };
+		A28299BE292A8FAE00688EC9 /* StudyPreferrableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299BD292A8FAE00688EC9 /* StudyPreferrableView.swift */; };
+		A28299C0292A92D500688EC9 /* MyGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299BF292A92D500688EC9 /* MyGenderView.swift */; };
+		A28299C2292A949C00688EC9 /* AgeSpanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299C1292A949C00688EC9 /* AgeSpanView.swift */; };
+		A28299C5292A958000688EC9 /* MultiSlider in Frameworks */ = {isa = PBXBuildFile; productRef = A28299C4292A958000688EC9 /* MultiSlider */; };
+		A28299C7292A9D5300688EC9 /* UserCardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299C6292A9D5300688EC9 /* UserCardTitleView.swift */; };
+		A28299C9292AA59100688EC9 /* UserCardReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28299C8292AA59100688EC9 /* UserCardReviewView.swift */; };
 		A29329F8291FF1280044816B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29329F7291FF1280044816B /* Router.swift */; };
 		A2932A122921CBE00044816B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A2932A112921CBE00044816B /* FirebaseAuth */; };
 		A2932A142921CBE00044816B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A2932A132921CBE00044816B /* FirebaseMessaging */; };
@@ -106,6 +118,7 @@
 		A20A45932922F7A9003CC900 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A20FCA3829291BDF00D69243 /* MyPageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTitle.swift; sourceTree = "<group>"; };
 		A20FCA3A2929300C00D69243 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A20FCA4229293B5900D69243 /* InfoManageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManageVC.swift; sourceTree = "<group>"; };
 		A21FA972292315C20000E8D2 /* VerifySMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSView.swift; sourceTree = "<group>"; };
 		A21FA976292315D00000E8D2 /* VerifySMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSVC.swift; sourceTree = "<group>"; };
 		A21FA97929231B220000E8D2 /* SignupNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNicknameView.swift; sourceTree = "<group>"; };
@@ -125,6 +138,7 @@
 		A21FA9A62925D9A50000E8D2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A21FA9A9292622990000E8D2 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A23E7AA5291A669D005B746F /* MogakStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MogakStudy.entitlements; sourceTree = "<group>"; };
+		A2434C2729295BB20035B1DB /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
 		A2499A9C291DD48900A81D07 /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
 		A254D44D2918DE1300AC5006 /* MogakStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MogakStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A254D4502918DE1300AC5006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +158,14 @@
 		A254D4872919D49700AC5006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A254D4892919D49900AC5006 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A254D48A2919D6A500AC5006 /* I18NStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18NStrings.swift; sourceTree = "<group>"; };
+		A28299B7292A8C1400688EC9 /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
+		A28299B9292A8DA800688EC9 /* AllowPhoneSearhView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowPhoneSearhView.swift; sourceTree = "<group>"; };
+		A28299BB292A8F3A00688EC9 /* WithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawView.swift; sourceTree = "<group>"; };
+		A28299BD292A8FAE00688EC9 /* StudyPreferrableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPreferrableView.swift; sourceTree = "<group>"; };
+		A28299BF292A92D500688EC9 /* MyGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGenderView.swift; sourceTree = "<group>"; };
+		A28299C1292A949C00688EC9 /* AgeSpanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSpanView.swift; sourceTree = "<group>"; };
+		A28299C6292A9D5300688EC9 /* UserCardTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardTitleView.swift; sourceTree = "<group>"; };
+		A28299C8292AA59100688EC9 /* UserCardReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardReviewView.swift; sourceTree = "<group>"; };
 		A29329F7291FF1280044816B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A2932A19292216880044816B /* UIView+UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		A2932A21292256A00044816B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -156,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28299C5292A958000688EC9 /* MultiSlider in Frameworks */,
 				A23E7A9C291A5BAF005B746F /* RxCocoa in Frameworks */,
 				A23E7A99291A5B43005B746F /* Alamofire in Frameworks */,
 				A2932A142921CBE00044816B /* FirebaseMessaging in Frameworks */,
@@ -167,6 +190,7 @@
 				A23E7AA1291A5C1B005B746F /* Reachability in Frameworks */,
 				A23E7AA4291A5CA2005B746F /* Hero in Frameworks */,
 				A23E7A9E291A5BAF005B746F /* RxSwift in Frameworks */,
+				A28299B6292A784600688EC9 /* AloeStackView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +262,15 @@
 				A20FCA3829291BDF00D69243 /* MyPageTitle.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A20FCA3D29293B2400D69243 /* InfoManage */ = {
+			isa = PBXGroup;
+			children = (
+				A2434C25292959EC0035B1DB /* View */,
+				A2434C22292959E00035B1DB /* VC */,
+			);
+			path = InfoManage;
 			sourceTree = "<group>";
 		};
 		A21FA97829231B140000E8D2 /* Signup */ = {
@@ -405,6 +438,30 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		A2434C22292959E00035B1DB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A20FCA4229293B5900D69243 /* InfoManageVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		A2434C25292959EC0035B1DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A28299B7292A8C1400688EC9 /* UserImageView.swift */,
+				A2434C2729295BB20035B1DB /* UserCardView.swift */,
+				A28299C6292A9D5300688EC9 /* UserCardTitleView.swift */,
+				A28299C8292AA59100688EC9 /* UserCardReviewView.swift */,
+				A28299BF292A92D500688EC9 /* MyGenderView.swift */,
+				A28299B9292A8DA800688EC9 /* AllowPhoneSearhView.swift */,
+				A28299BD292A8FAE00688EC9 /* StudyPreferrableView.swift */,
+				A28299C1292A949C00688EC9 /* AgeSpanView.swift */,
+				A28299BB292A8F3A00688EC9 /* WithdrawView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A2499A9A291DD46200A81D07 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +530,7 @@
 			children = (
 				A21FA9A32925D98C0000E8D2 /* Home */,
 				A21FA99B2925C4480000E8D2 /* Mypage */,
+				A20FCA3D29293B2400D69243 /* InfoManage */,
 				A21FA99629246A170000E8D2 /* TabBar */,
 				A21FA97829231B140000E8D2 /* Signup */,
 				A20A45882922F1A0003CC900 /* PhoneAuth */,
@@ -607,6 +665,8 @@
 				A23E7AA3291A5CA2005B746F /* Hero */,
 				A2932A112921CBE00044816B /* FirebaseAuth */,
 				A2932A132921CBE00044816B /* FirebaseMessaging */,
+				A28299B5292A784600688EC9 /* AloeStackView */,
+				A28299C4292A958000688EC9 /* MultiSlider */,
 			);
 			productName = MogakStudy;
 			productReference = A254D44D2918DE1300AC5006 /* MogakStudy.app */;
@@ -646,6 +706,8 @@
 				A23E7A9F291A5C1B005B746F /* XCRemoteSwiftPackageReference "Reachability" */,
 				A23E7AA2291A5CA1005B746F /* XCRemoteSwiftPackageReference "Hero" */,
 				A2932A102921CBE00044816B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A28299B4292A784600688EC9 /* XCRemoteSwiftPackageReference "AloeStackView" */,
+				A28299C3292A958000688EC9 /* XCRemoteSwiftPackageReference "MultiSlider" */,
 			);
 			productRefGroup = A254D44E2918DE1300AC5006 /* Products */;
 			projectDirPath = "";
@@ -708,9 +770,12 @@
 				A20A45742922BC01003CC900 /* OnboardingCVC.swift in Sources */,
 				A20A45852922EF4D003CC900 /* LoginManager.swift in Sources */,
 				A20A458C2922F1C3003CC900 /* PhoneAuthView.swift in Sources */,
+				A28299BC292A8F3A00688EC9 /* WithdrawView.swift in Sources */,
+				A28299C9292AA59100688EC9 /* UserCardReviewView.swift in Sources */,
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A2932A24292256B70044816B /* OnboardingVC.swift in Sources */,
 				A29329F8291FF1280044816B /* Router.swift in Sources */,
+				A2434C2829295BB20035B1DB /* UserCardView.swift in Sources */,
 				A21FA9842924062A0000E8D2 /* SignupBirthdayVC.swift in Sources */,
 				A21FA98A2924065E0000E8D2 /* SignupGenderView.swift in Sources */,
 				A21FA99A2924D9F50000E8D2 /* TabBarVC.swift in Sources */,
@@ -719,31 +784,38 @@
 				A20A457B2922E63E003CC900 /* Date+Extension.swift in Sources */,
 				A21FA9A52925D9970000E8D2 /* HomeView.swift in Sources */,
 				A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */,
+				A28299BE292A8FAE00688EC9 /* StudyPreferrableView.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
+				A28299C7292A9D5300688EC9 /* UserCardTitleView.swift in Sources */,
 				A21FA99F2925C4DC0000E8D2 /* MypageView.swift in Sources */,
 				A21FA9A72925D9A50000E8D2 /* HomeVC.swift in Sources */,
 				A20A458F2922F1DE003CC900 /* PhoneAuthVC.swift in Sources */,
 				A2499A9D291DD48900A81D07 /* FBAuthManager.swift in Sources */,
 				A21FA99D2925C4730000E8D2 /* MypageVC.swift in Sources */,
 				A21FA977292315D00000E8D2 /* VerifySMSVC.swift in Sources */,
+				A28299BA292A8DA800688EC9 /* AllowPhoneSearhView.swift in Sources */,
 				A21FA98C292406680000E8D2 /* SignupGenderVC.swift in Sources */,
 				A21FA995292415930000E8D2 /* SignupViewModel.swift in Sources */,
 				A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */,
+				A28299C0292A92D500688EC9 /* MyGenderView.swift in Sources */,
 				A21FA9AA292622990000E8D2 /* Keys.swift in Sources */,
 				A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
+				A28299B8292A8C1400688EC9 /* UserImageView.swift in Sources */,
 				A203D24729225F8A00B11636 /* BaseVC.swift in Sources */,
 				A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */,
 				A21FA97C29231B370000E8D2 /* SignupNicknameVC.swift in Sources */,
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
 				A21FA988292406530000E8D2 /* SignupEmailVC.swift in Sources */,
+				A28299C2292A949C00688EC9 /* AgeSpanView.swift in Sources */,
 				A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
 				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
 				A21FA982292406190000E8D2 /* SignupBirthdayView.swift in Sources */,
 				A20A45912922F77F003CC900 /* AuthViewModel.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
+				A20FCA4329293B5900D69243 /* InfoManageVC.swift in Sources */,
 				A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */,
 				A2932A22292256A00044816B /* OnboardingView.swift in Sources */,
 			);
@@ -1038,6 +1110,22 @@
 				minimumVersion = 1.6.0;
 			};
 		};
+		A28299B4292A784600688EC9 /* XCRemoteSwiftPackageReference "AloeStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marlimox/AloeStackView";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+		A28299C3292A958000688EC9 /* XCRemoteSwiftPackageReference "MultiSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yonat/MultiSlider";
+			requirement = {
+				kind = exactVersion;
+				version = 1.13.2;
+			};
+		};
 		A2932A102921CBE00044816B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1088,6 +1176,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A23E7AA2291A5CA1005B746F /* XCRemoteSwiftPackageReference "Hero" */;
 			productName = Hero;
+		};
+		A28299B5292A784600688EC9 /* AloeStackView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A28299B4292A784600688EC9 /* XCRemoteSwiftPackageReference "AloeStackView" */;
+			productName = AloeStackView;
+		};
+		A28299C4292A958000688EC9 /* MultiSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A28299C3292A958000688EC9 /* XCRemoteSwiftPackageReference "MultiSlider" */;
+			productName = MultiSlider;
 		};
 		A2932A112921CBE00044816B /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

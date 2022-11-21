@@ -7,8 +7,6 @@
 
 import UIKit
 import MogakStudyUIFramework
-import SwiftUI
-
 
 typealias Item = MyPageTitle
 typealias Section = Int
@@ -25,6 +23,10 @@ class MypageVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     override func setNavigationBar() {
@@ -63,6 +65,7 @@ extension MypageVC {
             }
             cell.contentConfiguration = content
             cell.indentationWidth = 17
+            cell.separatorLayoutGuide.leadingAnchor.constraint(equalTo: cell.leadingAnchor,constant: 17).isActive = true
             
             var background = UIBackgroundConfiguration.listPlainCell()
             background.backgroundColor = .clear
@@ -94,13 +97,9 @@ extension MypageVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.item == Item.username.rawValue {
             // 정보관리로 이동
-            print("정보관리로 이동")
+            let vc = InfoManageVC()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
 
-struct VCPreView:PreviewProvider {
-    static var previews: some View {
-        TabBarVC().toPreview()
-    }
-}
