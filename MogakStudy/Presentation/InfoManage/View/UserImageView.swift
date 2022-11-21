@@ -25,7 +25,7 @@ class UserImageView: UIView {
         $0.setTitle("요청하기", for: .normal)
         $0.setTitleColor(.msColor.white, for: .normal)
         $0.backgroundColor = .msColor.systemError
-        //$0.isHidden = false
+        $0.isHidden = true
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
