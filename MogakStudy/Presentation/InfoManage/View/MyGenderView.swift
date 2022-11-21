@@ -35,17 +35,17 @@ class MyGenderView: UIView {
     // MARK: Private
     
     private let label = UILabel().then {
-        $0.text = "내 성별"
+        $0.text = I18NStrings.MyInfo.myGender
         $0.font = .Title4_R14
         $0.textColor = .msColor.black
         
     }
     private let maleButton = msButton(status: InactiveButton()).then {
-        $0.setTitle("남자", for: .normal)
+        $0.setTitle(I18NStrings.Signup.male, for: .normal)
         $0.titleLabel?.font = .Body3_R14
     }
     private let femaleButton = msButton(status: FillButton()).then {
-        $0.setTitle("여자", for: .normal)
+        $0.setTitle(I18NStrings.Signup.female, for: .normal)
         $0.titleLabel?.font = .Body3_R14
         $0.isSelected = true
     }

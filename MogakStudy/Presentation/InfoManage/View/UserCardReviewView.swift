@@ -14,12 +14,12 @@ import MogakStudyUIFramework
 final class UserCardReviewView: UIView {
 
     let titleLabel = UILabel().then {
-        $0.text = "새싹 리뷰"
+        $0.text = I18NStrings.MyInfo.sesacReview
         $0.font = .Title6_R12
         $0.textColor = .msColor.black
     }
     let reviewInput = UITextView().then {
-        $0.text = "첫 리뷰를 기다리는 중이에요!"
+        $0.text = I18NStrings.MyInfo.waitingForFirstReviewPlaceholder
         $0.isScrollEnabled = false
         $0.font = .Body3_R14
         $0.textColor = .msColor.gray006

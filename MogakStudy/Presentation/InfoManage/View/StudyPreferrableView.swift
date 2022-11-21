@@ -33,12 +33,12 @@ class StudyPreferrableView: UIView {
     // MARK: Private
     
     private let label = UILabel().then {
-        $0.text = "자주 하는 스터디"
+        $0.text = I18NStrings.MyInfo.studyAlot
         $0.font = .Title4_R14
         $0.textColor = .msColor.black
     }
     private let studyTextField = msInput(status: ActiveInput()).then {
-        $0.placeholder = "스터디를 입력해 주세요"
+        $0.placeholder = I18NStrings.MyInfo.pleaseEnterStudyPlaceholder
     }
     
     private func setUpViews() {

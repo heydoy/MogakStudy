@@ -35,7 +35,7 @@ class WithdrawView: UIView {
     // MARK: Private
     
     private let label = UILabel().then {
-        $0.text = "회원탈퇴"
+        $0.text = I18NStrings.MyInfo.withdraw
         $0.font = .Title4_R14
         $0.textColor = .msColor.black
     

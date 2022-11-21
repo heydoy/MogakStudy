@@ -14,7 +14,7 @@ import MogakStudyUIFramework
 final class UserCardTitleView: UIView {
 
     let titleLabel = UILabel().then {
-        $0.text = "새싹 타이틀"
+        $0.text = I18NStrings.MyInfo.sesacTitle
         $0.font = .Title6_R12
         $0.textColor = .msColor.black
     }
@@ -40,32 +40,32 @@ final class UserCardTitleView: UIView {
     }
     let firstBtn = msButton(status: FillButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("좋은 매너", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.goodManner, for: .normal)
         $0.setTitleColor(.msColor.white, for: .normal)
     }
     let secondBtn = msButton(status: InactiveButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("정확한 시간 약속", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.punctuality, for: .normal)
         $0.setTitleColor(.msColor.black, for: .normal)
     }
     let thirdBtn = msButton(status: InactiveButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("빠른 응답", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.fastResponse, for: .normal)
         $0.setTitleColor(.msColor.black, for: .normal)
     }
     let fourthBtn = msButton(status: InactiveButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("친절한 성격", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.kindPersonality, for: .normal)
         $0.setTitleColor(.msColor.black, for: .normal)
     }
     let fifthBtn = msButton(status: InactiveButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("능숙한 실력", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.proficiency, for: .normal)
         $0.setTitleColor(.msColor.black, for: .normal)
     }
     let sixthBtn = msButton(status: InactiveButton()).then {
         $0.titleLabel?.font = .Title4_R14
-        $0.setTitle("유익한 시간", for: .normal)
+        $0.setTitle(I18NStrings.MyInfo.beneficialTime, for: .normal)
         $0.setTitleColor(.msColor.black, for: .normal)
     }
     

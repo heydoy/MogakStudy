@@ -35,7 +35,7 @@ class AgeSpanView: UIView {
     // MARK: Private
     
     private let label = UILabel().then {
-        $0.text = "상대방 연령대"
+        $0.text = I18NStrings.MyInfo.ageSpan
         $0.font = .Title4_R14
         $0.textColor = .msColor.black
 
@@ -76,8 +76,6 @@ class AgeSpanView: UIView {
     
     @objc
     func sliderChanged(slider: MultiSlider) {
-        print("thumb \(slider.draggedThumbIndex) moved")
-        print("now thumbs are at \(slider.value)") // e.g., [1.0, 4.5, 5.0]
         ageLabel.text = "\(Int(slider.value[0]))-\(Int(slider.value[1]))"
     }
     

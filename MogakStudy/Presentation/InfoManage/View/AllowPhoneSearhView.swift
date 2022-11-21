@@ -34,7 +34,7 @@ class AllowPhoneSearhView: UIView {
     // MARK: Private
     
     private let label = UILabel().then {
-        $0.text = "내 번호 검색허용"
+        $0.text = I18NStrings.MyInfo.allowSearchMynumber
         $0.font = .Title4_R14
         $0.textColor = .msColor.black
 
