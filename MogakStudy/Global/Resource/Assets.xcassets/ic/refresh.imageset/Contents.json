@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "sesac_face_2@1x.png",
+      "filename" : "refresh@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "sesac_face_2@2x.png",
+      "filename" : "refresh@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "sesac_face_2@3x.png",
+      "filename" : "refresh@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

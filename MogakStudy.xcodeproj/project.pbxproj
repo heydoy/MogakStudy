@@ -10,6 +10,8 @@
 		A203D24729225F8A00B11636 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24629225F8A00B11636 /* BaseVC.swift */; };
 		A203D24929225F9800B11636 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24829225F9800B11636 /* BaseView.swift */; };
 		A203D24C292261ED00B11636 /* NetworkReachableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203D24B292261ED00B11636 /* NetworkReachableManager.swift */; };
+		A2098018293545A500EB7CFF /* EmptySesacCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2098017293545A500EB7CFF /* EmptySesacCVC.swift */; };
+		A209801A29354BEA00EB7CFF /* SesacInfoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209801929354BEA00EB7CFF /* SesacInfoCVC.swift */; };
 		A20A456E2922B2E4003CC900 /* MogakStudyUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A456A2922B2DC003CC900 /* MogakStudyUIFramework.framework */; };
 		A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45712922BB4C003CC900 /* OnboardingModel.swift */; };
 		A20A45742922BC01003CC900 /* OnboardingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A45732922BC01003CC900 /* OnboardingCVC.swift */; };
@@ -82,6 +84,13 @@
 		A2932A22292256A00044816B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A21292256A00044816B /* OnboardingView.swift */; };
 		A2932A24292256B70044816B /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A23292256B70044816B /* OnboardingVC.swift */; };
 		A2932A27292257B30044816B /* ConciergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2932A26292257B30044816B /* ConciergeVC.swift */; };
+		A2BA75EE29343CE100171745 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA75ED29343CE100171745 /* SearchView.swift */; };
+		A2BA75F029343CF000171745 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA75EF29343CF000171745 /* SearchVC.swift */; };
+		A2DCFC4B2934873000BF7107 /* KeywordMyPreferableCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCFC4A2934873000BF7107 /* KeywordMyPreferableCVC.swift */; };
+		A2DCFC4D2934875100BF7107 /* KeywordRecommendedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCFC4C2934875100BF7107 /* KeywordRecommendedCVC.swift */; };
+		A2DCFC4F2934980100BF7107 /* KeywordHeaderCRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCFC4E2934980100BF7107 /* KeywordHeaderCRV.swift */; };
+		A2DCFC522934B6F600BF7107 /* FindSesacVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCFC512934B6F600BF7107 /* FindSesacVC.swift */; };
+		A2DCFC542934B73000BF7107 /* FindSesacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCFC532934B73000BF7107 /* FindSesacView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +114,8 @@
 		A203D24629225F8A00B11636 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		A203D24829225F9800B11636 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A203D24B292261ED00B11636 /* NetworkReachableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachableManager.swift; sourceTree = "<group>"; };
+		A2098017293545A500EB7CFF /* EmptySesacCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySesacCVC.swift; sourceTree = "<group>"; };
+		A209801929354BEA00EB7CFF /* SesacInfoCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacInfoCVC.swift; sourceTree = "<group>"; };
 		A20A45642922B2DB003CC900 /* MogakStudyUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MogakStudyUIFramework.xcodeproj; path = ../MogakStudyUIFramework/MogakStudyUIFramework.xcodeproj; sourceTree = "<group>"; };
 		A20A45712922BB4C003CC900 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		A20A45732922BC01003CC900 /* OnboardingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVC.swift; sourceTree = "<group>"; };
@@ -171,6 +182,13 @@
 		A2932A21292256A00044816B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A2932A23292256B70044816B /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		A2932A26292257B30044816B /* ConciergeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeVC.swift; sourceTree = "<group>"; };
+		A2BA75ED29343CE100171745 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A2BA75EF29343CF000171745 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A2DCFC4A2934873000BF7107 /* KeywordMyPreferableCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMyPreferableCVC.swift; sourceTree = "<group>"; };
+		A2DCFC4C2934875100BF7107 /* KeywordRecommendedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordRecommendedCVC.swift; sourceTree = "<group>"; };
+		A2DCFC4E2934980100BF7107 /* KeywordHeaderCRV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordHeaderCRV.swift; sourceTree = "<group>"; };
+		A2DCFC512934B6F600BF7107 /* FindSesacVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSesacVC.swift; sourceTree = "<group>"; };
+		A2DCFC532934B73000BF7107 /* FindSesacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSesacView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,6 +546,8 @@
 		A254D4672919348D00AC5006 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A2DCFC502934B6DB00BF7107 /* FindSesac */,
+				A2BA75EC29343CC600171745 /* Search */,
 				A21FA9A32925D98C0000E8D2 /* Home */,
 				A21FA99B2925C4480000E8D2 /* Mypage */,
 				A20FCA3D29293B2400D69243 /* InfoManage */,
@@ -636,6 +656,29 @@
 				A2932A26292257B30044816B /* ConciergeVC.swift */,
 			);
 			path = Concierge;
+			sourceTree = "<group>";
+		};
+		A2BA75EC29343CC600171745 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A2BA75ED29343CE100171745 /* SearchView.swift */,
+				A2BA75EF29343CF000171745 /* SearchVC.swift */,
+				A2DCFC4E2934980100BF7107 /* KeywordHeaderCRV.swift */,
+				A2DCFC4C2934875100BF7107 /* KeywordRecommendedCVC.swift */,
+				A2DCFC4A2934873000BF7107 /* KeywordMyPreferableCVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A2DCFC502934B6DB00BF7107 /* FindSesac */ = {
+			isa = PBXGroup;
+			children = (
+				A2DCFC532934B73000BF7107 /* FindSesacView.swift */,
+				A2DCFC512934B6F600BF7107 /* FindSesacVC.swift */,
+				A2098017293545A500EB7CFF /* EmptySesacCVC.swift */,
+				A209801929354BEA00EB7CFF /* SesacInfoCVC.swift */,
+			);
+			path = FindSesac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -774,19 +817,23 @@
 				A28299C9292AA59100688EC9 /* UserCardReviewView.swift in Sources */,
 				A254D46E29196BE800AC5006 /* setColor.swift in Sources */,
 				A2932A24292256B70044816B /* OnboardingVC.swift in Sources */,
+				A2BA75EE29343CE100171745 /* SearchView.swift in Sources */,
 				A29329F8291FF1280044816B /* Router.swift in Sources */,
 				A2434C2829295BB20035B1DB /* UserCardView.swift in Sources */,
 				A21FA9842924062A0000E8D2 /* SignupBirthdayVC.swift in Sources */,
 				A21FA98A2924065E0000E8D2 /* SignupGenderView.swift in Sources */,
 				A21FA99A2924D9F50000E8D2 /* TabBarVC.swift in Sources */,
 				A20FCA3B2929300C00D69243 /* UIViewController+Extension.swift in Sources */,
+				A2DCFC542934B73000BF7107 /* FindSesacView.swift in Sources */,
 				A21FA986292406480000E8D2 /* SignupEmailView.swift in Sources */,
 				A20A457B2922E63E003CC900 /* Date+Extension.swift in Sources */,
 				A21FA9A52925D9970000E8D2 /* HomeView.swift in Sources */,
 				A20A45722922BB4C003CC900 /* OnboardingModel.swift in Sources */,
+				A2DCFC4B2934873000BF7107 /* KeywordMyPreferableCVC.swift in Sources */,
 				A28299BE292A8FAE00688EC9 /* StudyPreferrableView.swift in Sources */,
 				A254D48B2919D6A500AC5006 /* I18NStrings.swift in Sources */,
 				A28299C7292A9D5300688EC9 /* UserCardTitleView.swift in Sources */,
+				A2DCFC4D2934875100BF7107 /* KeywordRecommendedCVC.swift in Sources */,
 				A21FA99F2925C4DC0000E8D2 /* MypageView.swift in Sources */,
 				A21FA9A72925D9A50000E8D2 /* HomeVC.swift in Sources */,
 				A20A458F2922F1DE003CC900 /* PhoneAuthVC.swift in Sources */,
@@ -798,12 +845,15 @@
 				A21FA995292415930000E8D2 /* SignupViewModel.swift in Sources */,
 				A20A45782922CC30003CC900 /* UICVC+Extension.swift in Sources */,
 				A28299C0292A92D500688EC9 /* MyGenderView.swift in Sources */,
+				A2098018293545A500EB7CFF /* EmptySesacCVC.swift in Sources */,
+				A2DCFC4F2934980100BF7107 /* KeywordHeaderCRV.swift in Sources */,
 				A21FA9AA292622990000E8D2 /* Keys.swift in Sources */,
 				A20A45762922BEB9003CC900 /* NSMutableAttributedString+Extension.swift in Sources */,
 				A254D4702919749500AC5006 /* setFont.swift in Sources */,
 				A254D4512918DE1300AC5006 /* AppDelegate.swift in Sources */,
 				A28299B8292A8C1400688EC9 /* UserImageView.swift in Sources */,
 				A203D24729225F8A00B11636 /* BaseVC.swift in Sources */,
+				A209801A29354BEA00EB7CFF /* SesacInfoCVC.swift in Sources */,
 				A21FA973292315C20000E8D2 /* VerifySMSView.swift in Sources */,
 				A21FA97C29231B370000E8D2 /* SignupNicknameVC.swift in Sources */,
 				A254D4782919D1BD00AC5006 /* String+Extension.swift in Sources */,
@@ -811,7 +861,9 @@
 				A28299C2292A949C00688EC9 /* AgeSpanView.swift in Sources */,
 				A20A45942922F7A9003CC900 /* ViewModelType.swift in Sources */,
 				A254D4532918DE1300AC5006 /* SceneDelegate.swift in Sources */,
+				A2BA75F029343CF000171745 /* SearchVC.swift in Sources */,
 				A203D24929225F9800B11636 /* BaseView.swift in Sources */,
+				A2DCFC522934B6F600BF7107 /* FindSesacVC.swift in Sources */,
 				A21FA982292406190000E8D2 /* SignupBirthdayView.swift in Sources */,
 				A20A45912922F77F003CC900 /* AuthViewModel.swift in Sources */,
 				A2932A1A292216880044816B /* UIView+UIStackView+Extension.swift in Sources */,
