@@ -27,19 +27,26 @@ class BaseVC: UIViewController {
     func setNavigationBar() {
         navigationController?.navigationBar.tintColor = .msColor.black
         
-        if self != navigationController?.viewControllers.first {
-            let customBackButton = UIBarButtonItem(
-                image: UIImage(named: "arrow"),
-                style: .plain,
-                target: self,
-                action: #selector(backButtonTapped) )
-            
-            navigationItem.leftBarButtonItem = customBackButton
-        }
+        navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.msColor.black,
+            .font: UIFont.Title3_M14
+        ]
+        
+        let customBackButton = UIBarButtonItem(
+            image: UIImage(systemName: "arrow.left"),
+            style: .plain,
+            target: self,
+            action: #selector(backButtonTapped) )
+        
+        navigationItem.leftBarButtonItem = customBackButton
     }
     
     @objc
     func backButtonTapped(_ sender: UIBarButtonItem) {
-        navigationController?.popViewController(animated: true)
+        if self == navigationController?.viewControllers.first {
+            dismiss(animated: true)
+        }  else {
+            navigationController?.popViewController(animated: true)
+        }
     }
 }
