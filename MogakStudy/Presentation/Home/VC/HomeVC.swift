@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
     
     let mainView = HomeView()
     
@@ -19,6 +19,29 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    override func configure() {
+        mainView.mainStatusSearchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
+        mainView.mainStatusAntennaButton.addTarget(self, action: #selector(antennaButtonTapped), for: .touchUpInside)
+        mainView.mainStatusMessageButton.addTarget(self, action: #selector(messageButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func searchButtonTapped(_ sender: UIButton) {
+        let vc = SearchVC()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
+    }
+    @objc func antennaButtonTapped(_ sender: UIButton) {
+        let vc = FindSesacVC()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
 
+    }
+    @objc func messageButtonTapped(_ sender: UIButton) {
+        
+    }
+    
 
 }
